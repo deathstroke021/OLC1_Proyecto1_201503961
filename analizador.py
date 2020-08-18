@@ -1,4 +1,6 @@
 from tkinter import Tk, Menu, messagebox, filedialog, ttk, Label, scrolledtext, INSERT, END, Button, Scrollbar, RIGHT, Y, Frame, Canvas, HORIZONTAL, VERTICAL, simpledialog
+from Buffer import Buffer
+from LexicalAnalyzer import LexicalAnalyzer
 
 root = Tk()
 root.title("Analizador")
@@ -7,6 +9,9 @@ root.configure(background = "gray")
 '''FUNCIONES DEL MENU'''
 
 archivo = ""
+
+Buffer = Buffer()
+Analyzer = LexicalAnalyzer()
 
 def nuevo():
     global archivo
@@ -47,6 +52,26 @@ def guardarComo():
     fguardar.write(editor.get(1.0, END))
     fguardar.close()
     archivo = guardar
+
+def ejecutar():
+
+    # Lists for every list returned list from the function tokenize
+    token = []
+    lexeme = []
+    row = []
+    column = []
+
+    # Tokenize and reload of the buffer
+    #entrada = 'program.c'
+    for i in Buffer.load_buffer(archivo):
+        t, lex, lin, col = Analyzer.tokenize(i)
+        token += t
+        lexeme += lex
+        row += lin
+        column += col
+
+    print('\nRecognize Tokens: ', token)
+
         
 
 
@@ -63,7 +88,7 @@ archivoMenu.add_command(label = "Salir", command = salir)
 
 
 barraMenu.add_cascade(label = "Archivo", menu = archivoMenu)
-barraMenu.add_command(label = "Analizar",  command = salir)
+barraMenu.add_command(label = "Analizar",  command = ejecutar)
 barraMenu.add_command(label = "Reportes",  command = salir)
 barraMenu.add_command(label = "Salir",  command = salir)
 
