@@ -9,36 +9,47 @@ class LexicalAnalyzer:
         rules = [
             ('COMENTARIO', r'\/\/(.)*'),
             ('COMENTARIO_MULTILINEA', r'\/\*((.)*\n(.)*)+\*\/'),
-            ('MAIN', r'main'),          # main
-            ('INT', r'int'),            # int
-            ('FLOAT', r'float'),        # float
-            ('IF', r'if'),              # if
-            ('ELSE', r'else'),          # else
-            ('WHILE', r'while'),        # while
-            ('READ', r'read'),          # read
-            ('PRINT', r'print'),        # print
-            ('LBRACKET', r'\('),        # (
-            ('RBRACKET', r'\)'),        # )
-            ('LBRACE', r'\{'),          # {
-            ('RBRACE', r'\}'),          # }
-            ('COMMA', r','),            # ,
-            ('PCOMMA', r';'),           # ;
-            ('EQ', r'=='),              # ==
-            ('NE', r'!='),              # !=
-            ('LE', r'<='),              # <=
-            ('GE', r'>='),              # >=
-            ('OR', r'\|\|'),            # ||
-            ('AND', r'&&'),             # &&
-            ('ATTR', r'\='),            # =
-            ('LT', r'<'),               # <
-            ('GT', r'>'),               # >
-            ('PLUS', r'\+'),            # +
-            ('MINUS', r'-'),            # -
-            ('MULT', r'\*'),            # *
-            ('DIV', r'\/'),             # /
-            ('ID', r'[a-zA-Z]\w*'),     # IDENTIFIERS
-            ('FLOAT_CONST', r'\d(\d)*\.\d(\d)*'),   # FLOAT
-            ('INTEGER_CONST', r'\d(\d)*'),          # INT
+            ('VAR', r'var'), 
+            ('TRUE', r'true'), 
+            ('FALSE', r'false'),
+            ('IF', r'if'),
+            ('CONSOLE', r'console'),
+            ('LOG', r'log'),
+            ('ELSE', r'else'),
+            ('FOR', r'for'),
+            ('WHILE', r'while'),
+            ('DO', r'do'),
+            ('CONTINUE', r'continue'),
+            ('BREAK', r'break'),
+            ('RETURN', r'return'),
+            ('FUNCTION', r'function'),  
+            ('CONSTRUCTOR', r'constructor'),
+            ('THIS', r'this'), 
+            ('MATH', r'math'),    
+            ('POW', r'pow'),               
+            ('ID', r'[a-zA-Z]\w*'),             
+            ('FLOAT_CONST', r'\d(\d)*\.\d(\d)*'),
+            ('INTEGER_CONST', r'\d(\d)*'),    
+            ('CADENA', r'\"(.)*\"'),
+            ('CARACTER', r'\'[a-zA-Z]\''),
+            ('IGUAL', r'='),              
+            ('ASTERICO', r'\*'),
+            ('PUNTO_COMA', r';'),
+            ('PARENTESIS_IZQ', r'\('),
+            ('PARENTESIS_DER', r'\)'),
+            ('MENOR_QUE', r'<'),              
+            ('MAS_QUE', r'>'),
+            ('PUNTO', r'\.'),
+            ('LLAVE_IZQ', r'\{'),
+            ('LLAVE_DER', r'\}'), 
+            ('MÁS', r'\+'),
+            ('AND', r'&'),
+            ('DIAGONAL', r'\/'),
+            ('GUION', r'-'),
+            ('DOS_PUNTOS', r':'),
+            ('COMA', r','),
+            ('NEGACION', r'!'), 
+            ('OR', r'\|'),   
             ('NEWLINE', r'\n'),         # NEW LINE
             ('SKIP', r'[ \t]+'),        # SPACE and TABS
             ('MISMATCH', r'.'),         # ANOTHER CHARACTER
@@ -65,8 +76,8 @@ class LexicalAnalyzer:
                 continue
             elif token_type == 'MISMATCH':
                 #raise RuntimeError('%r unexpected on line %d' % (token_lexeme, self.lin_num))
-                print('Erro lexico')
-                print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
+                #print('Error lexico')
+                print('Error Lexico, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
             else:
                     col = m.start() - lin_start
                     column.append(col)
@@ -74,7 +85,12 @@ class LexicalAnalyzer:
                     lexeme.append(token_lexeme)
                     row.append(self.lin_num)
                     # To print information about a Token
-                    print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
+                    if token_type == 'VAR' or token_type == 'TRUE' or token_type == 'FALSE' or token_type == 'IF'or token_type == 'CONSOLE' or token_type == 'LOG'or token_type == 'ELSE'or token_type == 'FOR'or token_type == 'WHILE'or token_type == 'DO'or token_type == 'CONTINUE'or token_type == 'BREAK'or token_type == 'RETURN'or token_type == 'FUNCTION'or token_type == 'CONSTRUCTOR'or token_type == 'THIS'or token_type == 'MATH'or token_type == 'POW':
+                        #print('Palabra Reservada')
+                        print('Token = PALABRA_RESERVADA, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
+                    else:
+                        print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
 
+        
         return token, lexeme, row, column
 

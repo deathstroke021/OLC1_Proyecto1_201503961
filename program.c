@@ -4,6 +4,21 @@
 armira
 */
 
+fernando
+fernando24
+fernando_24
+
+"fernando augusto armira ramirez"
+
+'f'
+.
+
+89
+
+var
+true
+#
+
 int main()
 {
     float a;

@@ -54,23 +54,35 @@ def guardarComo():
     archivo = guardar
 
 def ejecutar():
+    global archivo
 
-    # Lists for every list returned list from the function tokenize
-    token = []
-    lexeme = []
-    row = []
-    column = []
+    print("Ejecutando Analisis Lexico...")
 
-    # Tokenize and reload of the buffer
-    #entrada = 'program.c'
-    for i in Buffer.load_buffer(archivo):
-        t, lex, lin, col = Analyzer.tokenize(i)
-        token += t
-        lexeme += lex
-        row += lin
-        column += col
+    if archivo == "":
+        print("No hay archivos para analizar, guarde el archivo para continuar")
 
-    print('\nRecognize Tokens: ', token)
+    else:
+        # Lists for every list returned list from the function tokenize
+        token = []
+        lexeme = []
+        row = []
+        column = []
+ 
+        # Tokenize and reload of the buffer
+        #entrada = 'program.c'
+        for i in Buffer.load_buffer(archivo):
+            t, lex, lin, col = Analyzer.tokenize(i)
+            token += t
+            lexeme += lex
+            row += lin
+            column += col
+
+        
+        print('\nRecognize Tokens: ', token)
+        Analyzer.lin_num = 1
+        
+
+    
 
         
 
