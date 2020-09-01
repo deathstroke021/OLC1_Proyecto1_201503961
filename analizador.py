@@ -62,30 +62,79 @@ def ejecutar():
         print("No hay archivos para analizar, guarde el archivo para continuar")
 
     else:
-        # Lists for every list returned list from the function tokenize
-        token = []
-        lexeme = []
-        row = []
-        column = []
+
+        tipoarchivo = archivo.split(".")
+        print("Extension archivo: " + tipoarchivo[1])
+
+
+        if tipoarchivo[1] == "js":
+            print("Analizando archivo de JavaScript")
+            # Lists for every list returned list from the function tokenize
+            token = []
+            lexeme = []
+            row = []
+            column = []
  
-        # Tokenize and reload of the buffer
-        #entrada = 'program.c'
-        for i in Buffer.load_buffer(archivo):
-            t, lex, lin, col = Analyzer.tokenize(i)
-            token += t
-            lexeme += lex
-            row += lin
-            column += col
+            # Tokenize and reload of the buffer
+            #entrada = 'program.c'
+            for i in Buffer.load_buffer(archivo):
+                t, lex, lin, col = Analyzer.tokenizejs(i)
+                token += t
+                lexeme += lex
+                row += lin
+                column += col
 
         
-        print('\nRecognize Tokens: ', token)
-        Analyzer.lin_num = 1
+            print('\nRecognize Tokens: ', token)
+            Analyzer.lin_num = 1
+
+        elif tipoarchivo[1] == "css":
+            print("Analizando archivo de CSS")
+
+             # Lists for every list returned list from the function tokenize
+            token = []
+            lexeme = []
+            row = []
+            column = []
+ 
+            # Tokenize and reload of the buffer
+            #entrada = 'program.c'
+            for i in Buffer.load_buffer2(archivo):
+                t, lex, lin, col = Analyzer.tokenizecss(i)
+                token += t
+                lexeme += lex
+                row += lin
+                column += col
+
         
+            print('\nRecognize Tokens: ', token)
+            Analyzer.lin_num = 1
 
-    
+        elif tipoarchivo[1] == "html":
+            print("Analizando archivo de HTML")
+
+            # Lists for every list returned list from the function tokenize
+            token = []
+            lexeme = []
+            row = []
+            column = []
+ 
+            # Tokenize and reload of the buffer
+            #entrada = 'program.c'
+            for i in Buffer.load_buffer2(archivo):
+                t, lex, lin, col = Analyzer.tokenizehtml(i)
+                token += t
+                lexeme += lex
+                row += lin
+                column += col
 
         
+            print('\nRecognize Tokens: ', token)
+            Analyzer.lin_num = 1
+        else:
+            print("No se ha podido ejecutar el analisis, Archivo no soportado")
 
+        
 
 barraMenu = Menu(root)
 root.config(menu = barraMenu, width = 1000, height = 600)
