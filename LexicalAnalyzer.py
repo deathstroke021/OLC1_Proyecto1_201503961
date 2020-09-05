@@ -54,7 +54,11 @@ class LexicalAnalyzer:
             if token_type == 'NEWLINE':
                 lin_start = m.end()
                 self.lin_num += 1
+                token.append(token_type)
+                lexeme.append(token_lexeme)
             elif token_type == 'SKIP':
+                token.append(token_type)
+                lexeme.append(token_lexeme)
                 continue
             elif token_type == 'MISMATCH':
                 #raise RuntimeError('%r unexpected on line %d' % (token_lexeme, self.lin_num))
@@ -123,7 +127,11 @@ class LexicalAnalyzer:
             if token_type == 'NEWLINE':
                 lin_start = m.end()
                 self.lin_num += 1
+                token.append(token_type)
+                lexeme.append(token_lexeme)
             elif token_type == 'SKIP':
+                token.append(token_type)
+                lexeme.append(token_lexeme)
                 continue
             elif token_type == 'MISMATCH':
                 #raise RuntimeError('%r unexpected on line %d' % (token_lexeme, self.lin_num))
@@ -151,7 +159,7 @@ class LexicalAnalyzer:
 
     def tokenizehtml(self, code):
         rules = [    
-            #('PALABRA', r'[a-zA-Z]+'),
+            ('COMENTARIO', r'<!--(.)*-->'),
             ('ID', r'[a-zA-Z]\w*'),              
             ('FLOAT_CONST', r'\d(\d)*\.\d(\d)*'),
             ('INTEGER_CONST', r'\d(\d)*'),
@@ -185,12 +193,12 @@ class LexicalAnalyzer:
             if token_type == 'NEWLINE':
                 lin_start = m.end()
                 self.lin_num += 1
+                token.append(token_type)
+                lexeme.append(token_lexeme)
             elif token_type == 'SKIP':
+                token.append(token_type)
+                lexeme.append(token_lexeme)
                 continue
-            elif token_type == 'MISMATCH':
-                #raise RuntimeError('%r unexpected on line %d' % (token_lexeme, self.lin_num))
-                #print('Error lexico')
-                print('OTRO CARACTER, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
             else:
                     col = m.start() - lin_start
                     column.append(col)

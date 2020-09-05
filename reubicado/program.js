@@ -1,4 +1,5 @@
-//fernando
+//pathl:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
+//pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
 
 /* fernando
 armira
@@ -17,13 +18,21 @@ fernando_24
 
 var
 true
-#
+
+
+
+
+
+while (n < 3) {
+    n ++;
+    x
+}
 
 int main()
 {
     float a;
     a = 1.1;
-    int i, inc, j; %%
+    int i, inc, j; 
     i = 0;
     inc = 2;
     read j;
@@ -33,7 +42,9 @@ int main()
         i = i + inc;
         a = a*i;
     }
-?
+
+    whiletown
+
     if (a > 10.0)
     {
         print(a + i);

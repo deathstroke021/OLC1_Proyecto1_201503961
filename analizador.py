@@ -1,6 +1,7 @@
 from tkinter import Tk, Menu, messagebox, filedialog, ttk, Label, scrolledtext, INSERT, END, Button, Scrollbar, RIGHT, Y, Frame, Canvas, HORIZONTAL, VERTICAL, simpledialog
 from Buffer import Buffer
 from LexicalAnalyzer import LexicalAnalyzer
+import os
 
 root = Tk()
 root.title("Analizador")
@@ -56,6 +57,8 @@ def guardarComo():
 def ejecutar():
     global archivo
 
+    #write()
+
     print("Ejecutando Analisis Lexico...")
 
     if archivo == "":
@@ -65,6 +68,12 @@ def ejecutar():
 
         tipoarchivo = archivo.split(".")
         print("Extension archivo: " + tipoarchivo[1])
+
+        nombrearchivo = archivo.split("/")
+        print("Nombre archivo: " + nombrearchivo[-1])
+
+        path = ""
+    
 
 
         if tipoarchivo[1] == "js":
@@ -88,6 +97,31 @@ def ejecutar():
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
 
+            contador = 0
+            for i in range(len(token)):
+                if token[i] == "COMENTARIO" and contador <= 2:
+                    #print(lexeme[i])
+                    nuevadir = lexeme[i].split("//")
+                    #print(nuevadir[1])
+                    if nuevadir[1].find("pathw") >=0:
+                        path = nuevadir[1].split("pathw:")
+                        path = path[1].strip()
+                        print(path)
+
+
+                    contador = contador +1
+
+            if os.path.isdir(path):
+                print('La carpeta existe.')
+            else:
+                print('Creando carpeta...')
+                os.makedirs(path)
+            f= open(path+nombrearchivo[-1],"w+")
+            for i in range(len(token)):
+                #f.write(token[i] + " " + lexeme[i] + "\n")
+                f.write(lexeme[i])
+            f.close()
+
         elif tipoarchivo[1] == "css":
             print("Analizando archivo de CSS")
 
@@ -110,6 +144,31 @@ def ejecutar():
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
 
+            contador = 0
+            for i in range(len(token)):
+                if token[i] == "COMENTARIO" and contador <= 2:
+                    #print(lexeme[i])
+                    nuevadir = lexeme[i].split("*")
+                    #print(nuevadir[1])
+                    if nuevadir[1].find("pathw") >=0:
+                        path = nuevadir[1].split("pathw:")
+                        path = path[1].strip()
+                        print(path)
+
+
+                    contador = contador +1
+
+            if os.path.isdir(path):
+                print('La carpeta existe.')
+            else:
+                print('Creando carpeta...')
+                os.makedirs(path)
+            f= open(path+nombrearchivo[-1],"w+")
+            for i in range(len(token)):
+                #f.write(token[i] + " " + lexeme[i] + "\n")
+                f.write(lexeme[i])
+            f.close()
+
         elif tipoarchivo[1] == "html":
             print("Analizando archivo de HTML")
 
@@ -131,10 +190,33 @@ def ejecutar():
         
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
+
+            contador = 0
+            for i in range(len(token)):
+                if token[i] == "COMENTARIO" and contador <= 2:
+                    #print(lexeme[i])
+                    nuevadir = lexeme[i].split("--")
+                    #print(nuevadir[1])
+                    if nuevadir[1].find("pathw") >=0:
+                        path = nuevadir[1].split("pathw:")
+                        path = path[1].strip()
+                        print(path)
+
+
+                    contador = contador +1
+
+            if os.path.isdir(path):
+                print('La carpeta existe.')
+            else:
+                print('Creando carpeta...')
+                os.makedirs(path)
+            f= open(path+nombrearchivo[-1],"w+")
+            for i in range(len(token)):
+                #f.write(token[i] + " " + lexeme[i] + "\n")
+                f.write(lexeme[i])
+            f.close() 
         else:
             print("No se ha podido ejecutar el analisis, Archivo no soportado")
-
-        
 
 barraMenu = Menu(root)
 root.config(menu = barraMenu, width = 1000, height = 600)
