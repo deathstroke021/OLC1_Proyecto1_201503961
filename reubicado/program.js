@@ -1,17 +1,41 @@
 //pathl:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
 //pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
 
-/* fernando
+
+
+
+
+
+
+"fernando augusto armira ramirez"
+""
+"fernando augusto armira ramirez","fer"
+'f'
+
+/* fernando 
 armira
+ramirez
 */
+
+/*****************
+fernando 
+armira
+ramirez
+*****************/
+
+/********************
+fernando 
+armira
+ramirez
+********************/
+
+/*****************************/
+
+/*aaaaaaaaaaaaFERNANDObbbbbbbbbbbbbb*/
 
 fernando
 fernando24
 fernando_24
-
-"fernando augusto armira ramirez"
-
-'f'
 .
 
 89

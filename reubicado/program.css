@@ -14,7 +14,7 @@ fernando
     */
     /*      Entrada archivo css     */
 
-fernando_23
+fernando23
 
 fernando-23
 
@@ -33,20 +33,20 @@ div1 {
 int main()
 {
     float a;
-    a = 1.1;
+    a  1.1;
     int i, inc, j; %%
-    i = 0;
-    inc = 2;
+    i  0;
+    inc  2;
     read j;
 
-    while (i < j)
+    while (i  j)
     {
-        i = i + inc;
-        a = a*i;
+        i  i  inc;
+        a  a*i;
     }
-?
-    if (a > 10.0)
+
+    if (a  10.0)
     {
-        print(a + i);
+        print(a  i);
     }
 }
