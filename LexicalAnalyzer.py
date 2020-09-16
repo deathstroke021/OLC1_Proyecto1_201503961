@@ -270,7 +270,7 @@ class LexicalAnalyzer:
             ('ASTERICO', r'\*'),
             ('PARENTESIS_IZQ', r'\('),
             ('PARENTESIS_DER', r'\)'),
-            ('PUNTO', r'\.'),
+            #('PUNTO', r'\.'),
             ('MÁS', r'\+'),
             ('DIAGONAL', r'\/'),
             ('GUION', r'-'),          
@@ -299,8 +299,8 @@ class LexicalAnalyzer:
                 token.append(token_type)
                 lexeme.append(token_lexeme)
             elif token_type == 'SKIP':
-                token.append(token_type)
-                lexeme.append(token_lexeme)
+                #token.append(token_type)
+                #lexeme.append(token_lexeme)
                 continue
             #elif token_type == 'MISMATCH':
                 #raise RuntimeError('%r unexpected on line %d' % (token_lexeme, self.lin_num))

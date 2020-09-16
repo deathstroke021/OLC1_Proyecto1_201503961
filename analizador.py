@@ -507,12 +507,88 @@ def ejecutar():
                     while p.estaVacia() is False:
                         p.extraer()
 
-                elif token[i] == "SKIP":
-                    print("Ignorar")
+                #elif token[i] == "SKIP":
+                    #print("Ignorar")
 
                 elif token[i] == "MISMATCH":
                     estadolexico = "Error"
                     expresion = expresion + " " + lexeme[i]
+
+                elif token[i] == "ID" or token[i] == "FLOAT_CONST" or token[i] == "INTEGER_CONST" or token[i] == "CADENA":
+                    expresion = expresion + " " + lexeme[i]
+                    #print(i)
+                    #print("Actual:" + token[i])
+                    if i >= 1:
+                        #print(i)
+                        #print("Anterior:" + token[i-1])
+                        if token[i-1] == "ID" or token[i-1] == "FLOAT_CONST" or token[i-1] == "INTEGER_CONST" or token[i-1] == "CADENA":
+                            estado = "Incorrecto"
+                            
+                    if i <= (len(token)-2):
+
+                        #print(i)
+                        #print("Siguiente:" + token[i+1])
+                        if token[i+1] == "ID" or token[i+1] == "FLOAT_CONST" or token[i+1] == "INTEGER_CONST" or token[i+1] == "CADENA":
+                            estado = "Incorrecto"
+
+                elif token[i] == "ASTERICO" or token[i] == "DIAGONAL":
+                    #print("estado: " + estado)
+                    expresion = expresion + " " + lexeme[i]
+                    #print(i)
+                    #print("Actual:" + token[i])
+                    if i >= 1:
+                        #print(i)
+                        #print("Anterior:" + token[i-1])
+                        #if token[i-1] != "ID" or token[i-1] != "FLOAT_CONST" or token[i-1] != "INTEGER_CONST" or token[i-1] != "CADENA" or token[i-1] != "PARENTESIS_DER":
+                        if token[i-1] == "ASTERICO" or token[i-1] == "PARENTESIS_IZQ" or token[i-1] == "MÁS" or token[i-1] == "DIAGONAL" or token[i-1] == "GUION" or token[i-1] == "NEWLINE":
+
+                            estado = "Incorrecto"
+                    elif i == 0:
+                        estado = "Incorrecto"
+
+                    #print("estado: " + estado)
+
+                            
+                    if i <= (len(token)-2):
+
+                        #print(i)
+                        #print("Siguiente:" + token[i+1])
+                        #if token[i+1] != "ID" or token[i+1] != "FLOAT_CONST" or token[i+1] != "INTEGER_CONST" or token[i+1] != "CADENA"  or token[i+1] != "PARENTESIS_IZQ":
+                        if token[i+1] == "ASTERICO" or token[i+1] == "PARENTESIS_DER"  or token[i+1] == "DIAGONAL" or token[i+1] == "NEWLINE":
+
+                            estado = "Incorrecto" 
+                    elif i == len(token)- 1:
+                        estado = "Incorrecto"          
+
+                    #print("estado: " + estado) 
+                elif token[i] == "MÁS" or token[i] == "GUION":
+                    #print("estado: " + estado)
+                    expresion = expresion + " " + lexeme[i]
+                    #print(i)
+                    #print("Actual:" + token[i])
+                    #if i >= 1:
+                        #print(i)
+                        #print("Anterior:" + token[i-1])
+                        #if token[i-1] != "ID" or token[i-1] != "FLOAT_CONST" or token[i-1] != "INTEGER_CONST" or token[i-1] != "CADENA" or token[i-1] != "PARENTESIS_DER":
+                        #if token[i-1] == "MÁS" or token[i-1] == "GUION":
+
+                            #estado = "Incorrecto"
+
+                    #print("estado: " + estado)
+
+                            
+                    if i <= (len(token)-2):
+
+                        #print(i)
+                        #print("Siguiente:" + token[i+1])
+                        #if token[i+1] != "ID" or token[i+1] != "FLOAT_CONST" or token[i+1] != "INTEGER_CONST" or token[i+1] != "CADENA"  or token[i+1] != "PARENTESIS_IZQ":
+                        if token[i+1] == "ASTERICO" or token[i+1] == "PARENTESIS_DER" or token[i+1] == "DIAGONAL"  or token[i+1] == "NEWLINE":
+
+                            estado = "Incorrecto" 
+                    elif i == len(token)- 1:
+                        estado = "Incorrecto"          
+
+                    #print("estado: " + estado)  
 
                 else:
                     #f.write(lexeme[i])
