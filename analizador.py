@@ -1,6 +1,7 @@
 from tkinter import Tk, Menu, messagebox, filedialog, ttk, Label, scrolledtext, INSERT, END, Button, Scrollbar, RIGHT, Y, Frame, Canvas, HORIZONTAL, VERTICAL, simpledialog
 from Buffer import Buffer
 from LexicalAnalyzer import LexicalAnalyzer
+from LexicalAnalyzercolor import LexicalAnalyzercolor
 from pila import Pila
 from afd import afd
 import os
@@ -16,6 +17,7 @@ archivo = ""
 
 Buffer = Buffer()
 Analyzer = LexicalAnalyzer()
+Color = LexicalAnalyzercolor()
 Afd=afd()
 
 def nuevo():
@@ -28,20 +30,147 @@ def abrir():
     archivo = filedialog.askopenfilename(title = "Abrir Archivo", initialdir = "C:/")
 
     entrada = open(archivo)
-    content = entrada.read()
+
+    editor.tag_config("reservada", background="white", foreground="red")
+    editor.tag_config("variable", background="white", foreground="green")
+    editor.tag_config("stringchar", background="white", foreground="yellow")
+    editor.tag_config("intbool", background="white", foreground="blue")
+    editor.tag_config("comentario", background="white", foreground="gray")
+    editor.tag_config("operador", background="white", foreground="orange")
 
     editor.delete(1.0, END)
-    editor.insert(INSERT, content)
+
+    tipoarchivo = archivo.split(".")
+    #print("Extension archivo: " + tipoarchivo[1])
+    #nombrearchivo = archivo.split("/")
+    #print("Nombre archivo: " + nombrearchivo[-1])
+    #path = ""
+
+    if tipoarchivo[1] == "js":
+        #print("Analizando archivo de JavaScript")
+        # Lists for every list returned list from the function tokenize
+        tokencolor = []
+        lexemecolor = []
+        rowcolor = []
+        columncolor = []
+        # Tokenize and reload of the buffer
+        #entrada = 'program.c'
+        for i in Buffer.load_buffer(archivo):
+            t, lex, lin, col = Color.tokenizejs(i)
+            tokencolor += t
+            lexemecolor += lex
+            rowcolor += lin
+            columncolor += col
+
+        
+        #print('\nRecognize Tokens: ', tokencolor)
+        Color.lin_num = 1
+
+        for i in range(len(tokencolor)):
+            #content = entrada.read()
+            if tokencolor[i] == "COMENTARIO" or tokencolor[i] == "COMENTARIO_MULTILINEA":
+                editor.insert(INSERT, lexemecolor[i], "comentario")
+            elif tokencolor[i] == "ID":
+                if lexemecolor[i] == 'var' or lexemecolor[i] == 'if' or lexemecolor[i] == 'console' or lexemecolor[i] == 'log' or lexemecolor[i] == 'else' or lexemecolor[i] == 'for' or lexemecolor[i] == 'while' or lexemecolor[i] == 'do' or lexemecolor[i] == 'continue' or lexemecolor[i] == 'break' or lexemecolor[i] == 'return' or lexemecolor[i] == 'function' or lexemecolor[i] == 'constructor' or lexemecolor[i] == 'this' or lexemecolor[i] == 'math' or lexemecolor[i] == 'pow':
+                    editor.insert(INSERT, lexemecolor[i], "reservada")
+                elif lexemecolor[i] == 'true' or lexemecolor[i] == 'false':
+                    editor.insert(INSERT, lexemecolor[i], "intbool")
+                else:
+                    editor.insert(INSERT, lexemecolor[i], "variable")
+            elif tokencolor[i] == "FLOAT_CONST" or tokencolor[i] == "INTEGER_CONST":
+                editor.insert(INSERT, lexemecolor[i], "intbool")
+            elif tokencolor[i] == "CADENA" or tokencolor[i] == "CARACTER" or tokencolor[i] == "CADENATIPO2":
+                editor.insert(INSERT, lexemecolor[i], "stringchar")
+            elif tokencolor[i] == "IGUAL" or tokencolor[i] == "ASTERICO" or tokencolor[i] == "PUNTO_COMA" or tokencolor[i] == "PARENTESIS_IZQ" or tokencolor[i] == "PARENTESIS_DER" or tokencolor[i] == "MENOR_QUE" or tokencolor[i] == "MAS_QUE" or tokencolor[i] == "PUNTO" or tokencolor[i] == "LLAVE_IZQ" or tokencolor[i] == "LLAVE_DER" or tokencolor[i] == "MÁS" or tokencolor[i] == "AND" or tokencolor[i] == "DIAGONAL" or tokencolor[i] == "GUION" or tokencolor[i] == "DOS_PUNTOS" or tokencolor[i] == "COMA" or tokencolor[i] == "NEGACION" or tokencolor[i] == "OR":
+                editor.insert(INSERT, lexemecolor[i], "operador")
+            else:
+                editor.insert(INSERT, lexemecolor[i])
+
+    elif tipoarchivo[1] == "css":
+        #print("Analizando archivo de JavaScript")
+        # Lists for every list returned list from the function tokenize
+        tokencolor = []
+        lexemecolor = []
+        rowcolor = []
+        columncolor = []
+        # Tokenize and reload of the buffer
+        #entrada = 'program.c'
+        for i in Buffer.load_buffer(archivo):
+            t, lex, lin, col = Color.tokenizecss(i)
+            tokencolor += t
+            lexemecolor += lex
+            rowcolor += lin
+            columncolor += col
+
+        
+        #print('\nRecognize Tokens: ', tokencolor)
+        Color.lin_num = 1
+
+        for i in range(len(tokencolor)):
+            #content = entrada.read()
+            if tokencolor[i] == "COMENTARIO" or tokencolor[i] == "COMENTARIO_MULTILINEA":
+                editor.insert(INSERT, lexemecolor[i], "comentario")
+            elif tokencolor[i] == "ID":
+                if lexemecolor[i].lower() == 'color' or lexemecolor[i].lower() == 'border-style' or lexemecolor[i].lower() == 'border' or lexemecolor[i].lower() == 'text-allign' or lexemecolor[i].lower() == 'font-weight' or lexemecolor[i].lower() == 'padding-left' or lexemecolor[i].lower() == 'padding-top' or lexemecolor[i].lower() == 'line-height' or lexemecolor[i].lower() == 'margin-top' or lexemecolor[i].lower() == 'margin-left' or lexemecolor[i].lower() == 'display' or lexemecolor[i].lower() == 'top' or lexemecolor[i].lower() == 'float' or lexemecolor[i].lower() == 'min-width' or lexemecolor[i].lower() == 'background-color' or lexemecolor[i].lower() == 'opacity' or lexemecolor[i].lower() == 'font-family' or lexemecolor[i].lower() == 'font-size' or lexemecolor[i].lower() == 'padding-right' or lexemecolor[i].lower() == 'width' or lexemecolor[i].lower() == 'margin-right' or lexemecolor[i].lower() == 'position' or lexemecolor[i].lower() == 'right' or lexemecolor[i].lower() == 'clear' or lexemecolor[i].lower() == 'max-height' or lexemecolor[i].lower() == 'background-image' or lexemecolor[i].lower() == 'background' or lexemecolor[i].lower() == 'font-style' or lexemecolor[i].lower() == 'font' or lexemecolor[i].lower() == 'padding-bottom' or lexemecolor[i].lower() == 'padding' or lexemecolor[i].lower() == 'display' or lexemecolor[i].lower() == 'height' or lexemecolor[i].lower() == 'margin-bottom' or lexemecolor[i].lower() == 'margin' or lexemecolor[i].lower() == 'bottom' or lexemecolor[i].lower() == 'left' or lexemecolor[i].lower() == 'max-width' or lexemecolor[i].lower() == 'min-height' or lexemecolor[i].lower() == 'rgba' or lexemecolor[i].lower() == 'url' or lexemecolor[i].lower() == 'px' or lexemecolor[i].lower() == 'em' or lexemecolor[i].lower() == 'vh' or lexemecolor[i].lower() == 'vw' or lexemecolor[i].lower() == 'in' or lexemecolor[i].lower() == 'cm' or lexemecolor[i].lower() == 'mm' or lexemecolor[i].lower() == 'pt' or lexemecolor[i].lower() == 'pc' or lexemecolor[i].lower() == 'rem':
+                    editor.insert(INSERT, lexemecolor[i], "reservada")
+                else:
+                    editor.insert(INSERT, lexemecolor[i], "variable")
+            elif tokencolor[i] == "FLOAT_CONST" or tokencolor[i] == "INTEGER_CONST":
+                editor.insert(INSERT, lexemecolor[i], "intbool")
+            elif tokencolor[i] == "CADENA":
+                editor.insert(INSERT, lexemecolor[i], "stringchar")
+            elif tokencolor[i] == "SIGNO_MENOS" or tokencolor[i] == "LLAVE_IZQ" or tokencolor[i] == "LLAVE_DER" or tokencolor[i] == "DOS_PUNTOS" or tokencolor[i] == "PUNTO_COMA" or tokencolor[i] == "ASTERICO" or tokencolor[i] == "NUMERAL" or tokencolor[i] == "COMA" or tokencolor[i] == "PUNTO" or tokencolor[i] == "PORCENTAJE" or tokencolor[i] == "PARENTESIS_IZQ" or tokencolor[i] == "PARENTESIS_DER" or tokencolor[i] == "DIAGONAL":
+                editor.insert(INSERT, lexemecolor[i], "operador")
+            else:
+                editor.insert(INSERT, lexemecolor[i])
+    
+    elif tipoarchivo[1] == "html":
+        #print("Analizando archivo de JavaScript")
+        # Lists for every list returned list from the function tokenize
+        tokencolor = []
+        lexemecolor = []
+        rowcolor = []
+        columncolor = []
+        # Tokenize and reload of the buffer
+        #entrada = 'program.c'
+        for i in Buffer.load_buffer(archivo):
+            t, lex, lin, col = Color.tokenizehtml(i)
+            tokencolor += t
+            lexemecolor += lex
+            rowcolor += lin
+            columncolor += col
+
+        
+        #print('\nRecognize Tokens: ', tokencolor)
+        Color.lin_num = 1
+
+        for i in range(len(tokencolor)):
+            #content = entrada.read()
+            if tokencolor[i] == "COMENTARIO":
+                editor.insert(INSERT, lexemecolor[i], "comentario")
+            elif tokencolor[i] == "ID":
+                if lexemecolor[i].lower() == 'html' or lexemecolor[i].lower() == 'head' or lexemecolor[i].lower() == 'title' or lexemecolor[i].lower() == 'body' or lexemecolor[i].lower() == 'h1' or lexemecolor[i].lower() == 'h2' or lexemecolor[i].lower() == 'h3' or lexemecolor[i].lower() == 'h4' or lexemecolor[i].lower() == 'h5' or lexemecolor[i].lower() == 'h6' or lexemecolor[i].lower() == 'p' or lexemecolor[i].lower() == 'br' or lexemecolor[i].lower() == 'img' or lexemecolor[i].lower() == 'src' or lexemecolor[i].lower() == 'a' or lexemecolor[i].lower() == 'href' or lexemecolor[i].lower() == 'ol' or lexemecolor[i].lower() == 'ul' or lexemecolor[i].lower() == 'li' or lexemecolor[i].lower() == 'style' or lexemecolor[i].lower() == 'table' or lexemecolor[i].lower() == 'th' or lexemecolor[i].lower() == 'tr' or lexemecolor[i].lower() == 'border' or lexemecolor[i].lower() == 'caption' or lexemecolor[i].lower() == 'td' or lexemecolor[i].lower() == 'colgroup' or lexemecolor[i].lower() == 'col' or lexemecolor[i].lower()== 'thead' or lexemecolor[i].lower() == 'tbody' or lexemecolor[i].lower() == 'tfoot':
+
+                    editor.insert(INSERT, lexemecolor[i], "reservada")
+                else:
+                    editor.insert(INSERT, lexemecolor[i], "variable")
+            elif tokencolor[i] == "FLOAT_CONST" or tokencolor[i] == "INTEGER_CONST":
+                editor.insert(INSERT, lexemecolor[i], "intbool")
+            elif tokencolor[i] == "CADENA" or tokencolor[i] == "CADENA2":
+                editor.insert(INSERT, lexemecolor[i], "stringchar")
+            elif tokencolor[i] == "SIGNO_MENOS" or tokencolor[i] == "MENOR_QUE" or tokencolor[i] == "MAYOR_QUE" or tokencolor[i] == "DIAGONAL" or tokencolor[i] == "IGUAL":
+                editor.insert(INSERT, lexemecolor[i], "operador")
+            else:
+                editor.insert(INSERT, lexemecolor[i])
 
     #editor.tag_add("start", "2.8", "2.13")
-    consola.tag_config("start", background="black", foreground="yellow")
     
-
-
     entrada.close()
 
+    consola.tag_config("start", background="black", foreground="yellow")
+
     consola.insert(INSERT, "Abriendo archivo " + archivo + "\n")
-    consola.insert(INSERT, "Prueba \n", "start")
+    #consola.insert(INSERT, "Prueba \n", "start")
 
 def salir():
     value = messagebox.askokcancel("Salir", "Está seguro que desea salir?")

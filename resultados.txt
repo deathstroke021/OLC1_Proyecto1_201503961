@@ -1,35 +1,2394 @@
-La respuesta para [//pathl:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
+La respuesta para [///home/user/output/js/
 ] es: 
 // es un comentario
-La respuesta para [//pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
+La respuesta para [//PATHW: c:\user\output\js\
 ] es: 
 // es un comentario
 La respuesta para [
 ] es: 
-La respuesta para [fernando armira ramirez
+La respuesta para [/******************************************************************
 ] es: 
-fernando es un id
-armira es un id
-ramirez es un id
+/diagonal
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ===================ARCHIVO DE PRUEBA DE JS==================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+ARCHIVO es un id
+DE es un id
+PRUEBA es un id
+DE es un id
+JS es un id
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ================PATHL -> /home/user/output/js/================ *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+PATHL es un id
+- es un operador
+> no se reconoce
+/diagonal
+home es un id
+/diagonal
+user es un id
+/diagonal
+output es un id
+/diagonal
+js es un id
+/diagonal
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * =================PATHW -> c:\user\output\js\================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+PATHW es un id
+- es un operador
+> no se reconoce
+c es un id
+: no se reconoce
+\ no se reconoce
+user es un id
+\ no se reconoce
+output es un id
+\ no se reconoce
+js es un id
+\ no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ * ============================================================== *
+] es: 
+* es un operador
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+= no se reconoce
+* es un operador
+La respuesta para [ ******************************************************************/
+] es: 
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+/diagonal
 La respuesta para [
 ] es: 
-La respuesta para [24  28.6
-] es: 
-24 es un numero
 La respuesta para [
 ] es: 
-La respuesta para ["fer"
-] es: 
-"fer" es una cadena
 La respuesta para [
 ] es: 
-La respuesta para [%%%%%%
+La respuesta para [        /*********************************************
 ] es: 
-% no se reconoce
-% no se reconoce
-% no se reconoce
-% no se reconoce
-% no se reconoce
+/diagonal
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+La respuesta para [         *  Dentro de un archivo de tipo javascript  *
+] es: 
+* es un operador
+Dentro es un id
+de es un id
+un es un id
+archivo es un id
+de es un id
+tipo es un id
+javascript es un id
+* es un operador
+La respuesta para [         *  pueden encontrarse comentarios de tipo   *
+] es: 
+* es un operador
+pueden es un id
+encontrarse es un id
+comentarios es un id
+de es un id
+tipo es un id
+* es un operador
+La respuesta para [         *   multilinea o de tipo unilinea, estos    *
+] es: 
+* es un operador
+multilinea es un id
+o es un id
+de es un id
+tipo es un id
+unilinea es un id
+, no se reconoce
+estos es un id
+* es un operador
+La respuesta para [         *  pueden aparecer en cualquier parte del   *
+] es: 
+* es un operador
+pueden es un id
+aparecer es un id
+en es un id
+cualquier es un id
+parte es un id
+del es un id
+* es un operador
+La respuesta para [         * archivo de entrada tomando en cuenta que, *
+] es: 
+* es un operador
+archivo es un id
+de es un id
+entrada es un id
+tomando es un id
+en es un id
+cuenta es un id
+que es un id
+, no se reconoce
+* es un operador
+La respuesta para [         * el primero es el que contiene el path del *
+] es: 
+* es un operador
+el es un id
+primero es un id
+es es un id
+el es un id
+que es un id
+contiene es un id
+el es un id
+path es un id
+del es un id
+* es un operador
+La respuesta para [         *  directorio al cual se enviara la salida  *
+] es: 
+* es un operador
+directorio es un id
+al es un id
+cual es un id
+se es un id
+enviara es un id
+la es un id
+salida es un id
+* es un operador
+La respuesta para [         *        ya analizada y limpiada.           *
+] es: 
+* es un operador
+ya es un id
+analizada es un id
+y es un id
+limpiada es un id
+. no se reconoce
+* es un operador
+La respuesta para [         *********************************************/
+] es: 
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+/diagonal
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function session(){
+] es: 
+function es un id
+session es un id
+( no se reconoce
+) no se reconoce
+{ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var success = sessionStorage.getItem("session-user");
+] es: 
+var es un id
+success es un id
+= no se reconoce
+sessionStorage es un id
+. no se reconoce
+getItem es un id
+( no se reconoce
+"session-user" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    if(success == null){
+] es: 
+if es un id
+( no se reconoce
+success es un id
+= no se reconoce
+= no se reconoce
+null es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [        window.location.href = "login.html";
+] es: 
+window es un id
+. no se reconoce
+location es un id
+. no se reconoce
+href es un id
+= no se reconoce
+"login.html" es una cadena
+; no se reconoce
+La respuesta para [    }
+] es: 
+} no se reconoce
+La respuesta para [    
+] es: 
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function obtener(){
+] es: 
+function es un id
+obtener es un id
+( no se reconoce
+) no se reconoce
+{ no se reconoce
+La respuesta para [    session();^
+] es: 
+session es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+^ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var f = new Date();
+] es: 
+var es un id
+f es un id
+= no se reconoce
+new es un id
+Date es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var date = f.getFullYear() + "" + ( f.getMonth() + 1 ) + "" + f.getDate(); // YYYYMMDD
+] es: 
+var es un id
+date es un id
+= no se reconoce
+f es un id
+. no se reconoce
+getFullYear es un id
+( no se reconoce
+) no se reconoce
++ es un operador
+"" es una cadena
++ es un operador
+( no se reconoce
+f es un id
+. no se reconoce
+getMonth es un id
+( no se reconoce
+) no se reconoce
++ es un operador
+1 es un numero
+) no se reconoce
++ es un operador
+"" es una cadena
++ es un operador
+f es un id
+. no se reconoce
+getDate es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+// es un comentario
+La respuesta para [
+] es: 
+La respuesta para [    var nit = document.getElementById("nit").value;
+] es: 
+var es un id
+nit es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+"nit" es una cadena
+) no se reconoce
+. no se reconoce
+value es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var datos = {
+] es: 
+var es un id
+datos es un id
+= no se reconoce
+{ no se reconoce
+La respuesta para [        fecha: parseInt(date,"10"), // fecha de pedido
+] es: 
+fecha es un id
+: no se reconoce
+parseInt es un id
+( no se reconoce
+date es un id
+, no se reconoce
+"10" es una cadena
+) no se reconoce
+, no se reconoce
+// es un comentario
+La respuesta para [        nit: nit,                   // nit del cliente
+] es: 
+nit es un id
+: no se reconoce
+nit es un id
+, no se reconoce
+// es un comentario
+La respuesta para [    };
+] es: 
+} no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var url = 'http://ejemplo_sitio_web/endpoint1/';
+] es: 
+var es un id
+url es un id
+= no se reconoce
+'http://ejemplo_sitio_web/endpoint1/' es una cadena tipo 2
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    ajax({url,
+] es: 
+ajax es un id
+( no se reconoce
+{ no se reconoce
+url es un id
+, no se reconoce
+La respuesta para [        type: 'POST',
+] es: 
+type es un id
+: no se reconoce
+'POST' es una cadena tipo 2
+, no se reconoce
+La respuesta para [        dataType: 'json',
+] es: 
+dataType es un id
+: no se reconoce
+'json' es una cadena tipo 2
+, no se reconoce
+La respuesta para [        data: datos,
+] es: 
+data es un id
+: no se reconoce
+datos es un id
+, no se reconoce
+La respuesta para [        async: true,
+] es: 
+async es un id
+: no se reconoce
+true es un id
+, no se reconoce
+La respuesta para [        success: function(response){
+] es: 
+success es un id
+: no se reconoce
+function es un id
+( no se reconoce
+response es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [            addProducts(response);
+] es: 
+addProducts es un id
+( no se reconoce
+response es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        }
+] es: 
+} no se reconoce
+La respuesta para [    });
+] es: 
+} no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function addProducts(data){
+] es: 
+function es un id
+addProducts es un id
+( no se reconoce
+data es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    ^var toJSON = JSON.parse(JSON.stringify(data));
+] es: 
+^ no se reconoce
+var es un id
+toJSON es un id
+= no se reconoce
+JSON es un id
+. no se reconoce
+parse es un id
+( no se reconoce
+JSON es un id
+. no se reconoce
+stringify es un id
+( no se reconoce
+data es un id
+) no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var tbody = document.getElementById('body');
+] es: 
+var es un id
+tbody es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+'body' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var inputTotal = document.getElementById("total");
+] es: 
+var es un id
+inputTotal es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+"total" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var total = 0.0;
+] es: 
+var es un id
+total es un id
+= no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    toJSON.forEach(function(element) {
+] es: 
+toJSON es un id
+. no se reconoce
+forEach es un id
+( no se reconoce
+function es un id
+( no se reconoce
+element es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [        total = total + parseFloat(element.precio);
+] es: 
+total es un id
+= no se reconoce
+total es un id
++ es un operador
+parseFloat es un id
+( no se reconoce
+element es un id
+. no se reconoce
+precio es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [    });
+] es: 
+} no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    inputTotal.value = total;
+] es: 
+inputTotal es un id
+. no se reconoce
+value es un id
+= no se reconoce
+total es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    return '200';
+] es: 
+return es un id
+'200' es una cadena tipo 2
+; no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function facturar(){
+] es: 
+function es un id
+facturar es un id
+( no se reconoce
+) no se reconoce
+{ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var doc = new jsPDF();``
+] es: 
+var es un id
+doc es un id
+= no se reconoce
+new es un id
+jsPDF es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+` no se reconoce
+` no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var nit = document.getElementById("nit").value;
+] es: 
+var es un id
+nit es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+"nit" es una cadena
+) no se reconoce
+. no se reconoce
+value es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var total = document.getElementById("total").value;
+] es: 
+var es un id
+total es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+"total" es una cadena
+) no se reconoce
+. no se reconoce
+value es un id
+; no se reconoce
+La respuesta para [    
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [    var specialElementHandlers = {
+] es: 
+var es un id
+specialElementHandlers es un id
+= no se reconoce
+{ no se reconoce
+La respuesta para [        '#elementH': function (element, renderer) {
+] es: 
+'#elementH' es una cadena tipo 2
+: no se reconoce
+function es un id
+( no se reconoce
+element es un id
+, no se reconoce
+renderer es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [            return true;
+] es: 
+return es un id
+true es un id
+; no se reconoce
+La respuesta para [        }
+] es: 
+} no se reconoce
+La respuesta para [    };
+] es: 
+} no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [    doc.fromHTML(elementHTML, 15, 15, {
+] es: 
+doc es un id
+. no se reconoce
+fromHTML es un id
+( no se reconoce
+elementHTML es un id
+, no se reconoce
+15 es un numero
+, no se reconoce
+15 es un numero
+, no se reconoce
+{ no se reconoce
+La respuesta para [        'width': 170,
+] es: 
+'width' es una cadena tipo 2
+: no se reconoce
+170 es un numero
+, no se reconoce
+La respuesta para [        'elementHandlers': specialElementHandlers
+] es: 
+'elementHandlers' es una cadena tipo 2
+: no se reconoce
+specialElementHandlers es un id
+La respuesta para [    });
+] es: 
+} no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [    doc.save('factura.pdf');~
+] es: 
+doc es un id
+. no se reconoce
+save es un id
+( no se reconoce
+'factura.pdf' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+~ no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function logout(){
+] es: 
+function es un id
+logout es un id
+( no se reconoce
+) no se reconoce
+{ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    sessionStorage.clear();
+] es: 
+sessionStorage es un id
+. no se reconoce
+clear es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    window.location.href = "login.html";
+] es: 
+window es un id
+. no se reconoce
+location es un id
+. no se reconoce
+href es un id
+= no se reconoce
+"login.html" es una cadena
+; no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function data_validation(){
+] es: 
+function es un id
+data_validation es un id
+( no se reconoce
+) no se reconoce
+{ no se reconoce
+La respuesta para [    var data_in_cache = sessionStorage.getItem("data-in-cache");
+] es: 
+var es un id
+data_in_cache es un id
+= no se reconoce
+sessionStorage es un id
+. no se reconoce
+getItem es un id
+( no se reconoce
+"data-in-cache" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    if(!data_in_cache){
+] es: 
+if es un id
+( no se reconoce
+! no se reconoce
+data_in_cache es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [        sessionStorage.setItem("data-in-cache",false);
+] es: 
+sessionStorage es un id
+. no se reconoce
+setItem es un id
+( no se reconoce
+"data-in-cache" es una cadena
+, no se reconoce
+false es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [    }
+] es: 
+} no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function save_in_cache(data){
+] es: 
+function es un id
+save_in_cache es un id
+( no se reconoce
+data es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [    sessionStorage.setItem("data-in-cache",true);%
+] es: 
+sessionStorage es un id
+. no se reconoce
+setItem es un id
+( no se reconoce
+"data-in-cache" es una cadena
+, no se reconoce
+true es un id
+) no se reconoce
+; no se reconoce
 % no se reconoce
 La respuesta para [
 ] es: 
+La respuesta para [    sessionStorage.setItem("data-products",JSON.stringify(data));
+] es: 
+sessionStorage es un id
+. no se reconoce
+setItem es un id
+( no se reconoce
+"data-products" es una cadena
+, no se reconoce
+JSON es un id
+. no se reconoce
+stringify es un id
+( no se reconoce
+data es un id
+) no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    return;
+] es: 
+return es un id
+; no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [function addProducts(data){#
+] es: 
+function es un id
+addProducts es un id
+( no se reconoce
+data es un id
+) no se reconoce
+{ no se reconoce
+# no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    var toJSON = JSON.parse(JSON.stringify(data)).Items;
+] es: 
+var es un id
+toJSON es un id
+= no se reconoce
+JSON es un id
+. no se reconoce
+parse es un id
+( no se reconoce
+JSON es un id
+. no se reconoce
+stringify es un id
+( no se reconoce
+data es un id
+) no se reconoce
+) no se reconoce
+. no se reconoce
+Items es un id
+; no se reconoce
+La respuesta para [    var lista = document.getElementById('listadoProductos');
+] es: 
+var es un id
+lista es un id
+= no se reconoce
+document es un id
+. no se reconoce
+getElementById es un id
+( no se reconoce
+'listadoProductos' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    toJSON.forEach(function(element) {
+] es: 
+toJSON es un id
+. no se reconoce
+forEach es un id
+( no se reconoce
+function es un id
+( no se reconoce
+element es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [        //id del producto
+] es: 
+// es un comentario
+La respuesta para [        var divproducto = document.createElement("div");
+] es: 
+var es un id
+divproducto es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"div" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        divproducto.setAttribute("class","product");&
+] es: 
+divproducto es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+"class" es una cadena
+, no se reconoce
+"product" es una cadena
+) no se reconoce
+; no se reconoce
+& no se reconoce
+La respuesta para [        divproducto.setAttribute('id',element.id.N);
+] es: 
+divproducto es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'id' es una cadena tipo 2
+, no se reconoce
+element es un id
+. no se reconoce
+id es un id
+. no se reconoce
+N es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        //seccion de imagen
+] es: 
+// es un comentario
+La respuesta para [        var divimagen = document.createElement("div");
+] es: 
+var es un id
+divimagen es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"div" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        divimagen.setAttribute("align","center");
+] es: 
+divimagen es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+"align" es una cadena
+, no se reconoce
+"center" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var img = document.createElement("img");
+] es: 
+var es un id
+img es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"img" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        img.setAttribute('src',element.url.S);
+] es: 
+img es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'src' es una cadena tipo 2
+, no se reconoce
+element es un id
+. no se reconoce
+url es un id
+. no se reconoce
+S es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        img.setAttribute(@'alt','');
+] es: 
+img es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+@ no se reconoce
+'alt' es una cadena tipo 2
+, no se reconoce
+'' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        img.setAttribute('height','200px');
+] es: 
+img es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'height' es una cadena tipo 2
+, no se reconoce
+'200px' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        img.setAttribute('width','200px');
+] es: 
+img es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'width' es una cadena tipo 2
+, no se reconoce
+'200px' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        divimagen.appendChild(img);
+] es: 
+divimagen es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+img es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        //seccion de datos
+] es: 
+// es un comentario
+La respuesta para [        var divdata = document.createElement("div");
+] es: 
+var es un id
+divdata es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"div" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        divdata.setAttribute('class','product-body');
+] es: 
+divdata es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'class' es una cadena tipo 2
+, no se reconoce
+'product-body' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var pcategoria = document.createElement("p");$
+] es: 
+var es un id
+pcategoria es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"p" es una cadena
+) no se reconoce
+; no se reconoce
+$ no se reconoce
+La respuesta para [        pcategoria.setAttribute('class','product-category');
+] es: 
+pcategoria es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'class' es una cadena tipo 2
+, no se reconoce
+'product-category' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        pcategoria.innerHTML = element.categoria.S;
+] es: 
+pcategoria es un id
+. no se reconoce
+innerHTML es un id
+= no se reconoce
+element es un id
+. no se reconoce
+categoria es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [        pcategoria.innerText = element.categoria.S;
+] es: 
+pcategoria es un id
+. no se reconoce
+innerText es un id
+= no se reconoce
+element es un id
+. no se reconoce
+categoria es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var hnombre = document.createElement("h3");Â¿
+] es: 
+var es un id
+hnombre es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"h3" es una cadena
+) no se reconoce
+; no se reconoce
+Â es un id
+¿ no se reconoce
+La respuesta para [        hnombre.setAttribute('class','product-name');
+] es: 
+hnombre es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'class' es una cadena tipo 2
+, no se reconoce
+'product-name' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        hnombre.innerHTML = element.nombre.S;
+] es: 
+hnombre es un id
+. no se reconoce
+innerHTML es un id
+= no se reconoce
+element es un id
+. no se reconoce
+nombre es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [        hnombre.innerText = element.nombre.S;
+] es: 
+hnombre es un id
+. no se reconoce
+innerText es un id
+= no se reconoce
+element es un id
+. no se reconoce
+nombre es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var hprecio = document.createElement("h4");
+] es: 
+var es un id
+hprecio es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"h4" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        hprecio.setAttribute('class','product-price');
+] es: 
+hprecio es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'class' es una cadena tipo 2
+, no se reconoce
+'product-price' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        hprecio.innerHTML = "Q"+element.precio.S;
+] es: 
+hprecio es un id
+. no se reconoce
+innerHTML es un id
+= no se reconoce
+"Q" es una cadena
++ es un operador
+element es un id
+. no se reconoce
+precio es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [        hprecio.innerText = "Q"+element.precio.S;
+] es: 
+hprecio es un id
+. no se reconoce
+innerText es un id
+= no se reconoce
+"Q" es una cadena
++ es un operador
+element es un id
+. no se reconoce
+precio es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        divdata.appendChild(pcategoria);
+] es: 
+divdata es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+pcategoria es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        divdata.appendChild(hnombre);
+] es: 
+divdata es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+hnombre es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        divdata.appendChild(hprecio);@
+] es: 
+divdata es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+hprecio es un id
+) no se reconoce
+; no se reconoce
+@ no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [        //seccion del boton de compra
+] es: 
+// es un comentario
+La respuesta para [        var divcart = document.createElement("div");
+] es: 
+var es un id
+divcart es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"div" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        divcart.setAttribute('class','add-to-cart');
+] es: 
+divcart es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'class' es una cadena tipo 2
+, no se reconoce
+'add-to-cart' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var button1 = document.createElement("button");
+] es: 
+var es un id
+button1 es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"button" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        button1.setAttribute("class","add-to-cart-btn");
+] es: 
+button1 es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+"class" es una cadena
+, no se reconoce
+"add-to-cart-btn" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        button1.setAttribute('id',element.id.N);
+] es: 
+button1 es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'id' es una cadena tipo 2
+, no se reconoce
+element es un id
+. no se reconoce
+id es un id
+. no se reconoce
+N es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        var namebtn=element.id.N+","+element.categoria.S+","+element.nombre.S+","+element.precio.S;
+] es: 
+var es un id
+namebtn es un id
+= no se reconoce
+element es un id
+. no se reconoce
+id es un id
+. no se reconoce
+N es un id
++ es un operador
+"," es una cadena
++ es un operador
+element es un id
+. no se reconoce
+categoria es un id
+. no se reconoce
+S es un id
++ es un operador
+"," es una cadena
++ es un operador
+element es un id
+. no se reconoce
+nombre es un id
+. no se reconoce
+S es un id
++ es un operador
+"," es una cadena
++ es un operador
+element es un id
+. no se reconoce
+precio es un id
+. no se reconoce
+S es un id
+; no se reconoce
+La respuesta para [        button1.setAttribute('name',namebtn);
+] es: 
+button1 es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'name' es una cadena tipo 2
+, no se reconoce
+namebtn es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        button1.setAttribute('onclick','agregarCarrito(this);');
+] es: 
+button1 es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+'onclick' es una cadena tipo 2
+, no se reconoce
+'agregarCarrito(this);' es una cadena tipo 2
+) no se reconoce
+; no se reconoce
+La respuesta para [        button1.innerHTML = "Agregar al Carrito";/
+] es: 
+button1 es un id
+. no se reconoce
+innerHTML es un id
+= no se reconoce
+"Agregar al Carrito" es una cadena
+; no se reconoce
+/diagonal
+La respuesta para [        button1.innerText = "Agregar al Carrito";
+] es: 
+button1 es un id
+. no se reconoce
+innerText es un id
+= no se reconoce
+"Agregar al Carrito" es una cadena
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        var i1 = document.createElement("i");
+] es: 
+var es un id
+i1 es un id
+= no se reconoce
+document es un id
+. no se reconoce
+createElement es un id
+( no se reconoce
+"i" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [        i1.setAttribute("class","fa fa-shopping-cart");
+] es: 
+i1 es un id
+. no se reconoce
+setAttribute es un id
+( no se reconoce
+"class" es una cadena
+, no se reconoce
+"fa fa-shopping-cart" es una cadena
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        button1.appendChild(i1);
+] es: 
+button1 es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+i1 es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        divcart.appendChild(button1);
+] es: 
+divcart es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+button1 es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        divproducto.appendChild(divimagen);
+] es: 
+divproducto es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+divimagen es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        divproducto.appendChild(divdata);
+] es: 
+divproducto es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+divdata es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [        divproducto.appendChild(divcart);
+] es: 
+divproducto es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+divcart es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [        lista.appendChild(divproducto);
+] es: 
+lista es un id
+. no se reconoce
+appendChild es un id
+( no se reconoce
+divproducto es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [    });
+] es: 
+} no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [    return '200';
+] es: 
+return es un id
+'200' es una cadena tipo 2
+; no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [var lista = new Array();
+] es: 
+var es un id
+lista es un id
+= no se reconoce
+new es un id
+Array es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [function linkedlist(pestana, nombre) {
+] es: 
+function es un id
+linkedlist es un id
+( no se reconoce
+pestana es un id
+, no se reconoce
+nombre es un id
+) no se reconoce
+{ no se reconoce
+La respuesta para [    var obj = new Object();
+] es: 
+var es un id
+obj es un id
+= no se reconoce
+new es un id
+Object es un id
+( no se reconoce
+) no se reconoce
+; no se reconoce
+La respuesta para [    obj.pestana = pestana;
+] es: 
+obj es un id
+. no se reconoce
+pestana es un id
+= no se reconoce
+pestana es un id
+; no se reconoce
+La respuesta para [    obj.nombre = nombre;
+] es: 
+obj es un id
+. no se reconoce
+nombre es un id
+= no se reconoce
+nombre es un id
+; no se reconoce
+La respuesta para [    lista.push(obj);
+] es: 
+lista es un id
+. no se reconoce
+push es un id
+( no se reconoce
+obj es un id
+) no se reconoce
+; no se reconoce
+La respuesta para [}
+] es: 
+} no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [
+] es: 
+La respuesta para [        /**************************
+] es: 
+/diagonal
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+La respuesta para [         *  Posibles caracteres   *
+] es: 
+* es un operador
+Posibles es un id
+caracteres es un id
+* es un operador
+La respuesta para [         * que deberan reportados *
+] es: 
+* es un operador
+que es un id
+deberan es un id
+reportados es un id
+* es un operador
+La respuesta para [         *      como error        *
+] es: 
+* es un operador
+como es un id
+error es un id
+* es un operador
+La respuesta para [         *                        *
+] es: 
+* es un operador
+* es un operador
+La respuesta para [         *     $ @ # % & ^ ? ~    *
+] es: 
+* es un operador
+$ no se reconoce
+@ no se reconoce
+# no se reconoce
+% no se reconoce
+& no se reconoce
+^ no se reconoce
+? no se reconoce
+~ no se reconoce
+* es un operador
+La respuesta para [         **************************/] es: 
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
+* es un operador
