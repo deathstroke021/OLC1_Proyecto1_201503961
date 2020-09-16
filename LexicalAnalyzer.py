@@ -51,6 +51,9 @@ class LexicalAnalyzer:
         lexeme = []
         row = []
         column = []
+        error = []
+        rowerror = []
+        colerror = []
 
         # It analyzes the code to find the lexemes and their respective Tokens
         for m in re.finditer(tokens_join, code):
@@ -76,6 +79,9 @@ class LexicalAnalyzer:
 
                     if token_type == 'MISMATCH':
                         print('Error Lexico, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
+                        error.append(token_lexeme)
+                        rowerror.append(self.lin_num)
+                        colerror.append(col)
                     else:
                         token.append(token_type)
                         lexeme.append(token_lexeme)
@@ -92,7 +98,7 @@ class LexicalAnalyzer:
                             print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
 
         
-        return token, lexeme, row, column
+        return token, lexeme, row, column, error, rowerror, colerror
     
     def tokenizecss(self, code):
         rules = [
@@ -132,6 +138,9 @@ class LexicalAnalyzer:
         lexeme = []
         row = []
         column = []
+        error = []
+        rowerror = []
+        colerror = []
 
         # It analyzes the code to find the lexemes and their respective Tokens
         for m in re.finditer(tokens_join, code):
@@ -157,6 +166,10 @@ class LexicalAnalyzer:
 
                 if token_type == 'MISMATCH':
                     print('Error Lexico, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
+                    error.append(token_lexeme)
+                    rowerror.append(self.lin_num)
+                    colerror.append(col)
+                
                 else:
                     token.append(token_type)
                     lexeme.append(token_lexeme)
@@ -173,7 +186,7 @@ class LexicalAnalyzer:
                         print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
  
         
-        return token, lexeme, row, column
+        return token, lexeme, row, column, error, rowerror, colerror
 
     def tokenizehtml(self, code):
         rules = [    
@@ -203,6 +216,8 @@ class LexicalAnalyzer:
         lexeme = []
         row = []
         column = []
+        tokenerror = []
+        lexemeerror = []
 
         # It analyzes the code to find the lexemes and their respective Tokens
         for m in re.finditer(tokens_join, code):
@@ -224,6 +239,8 @@ class LexicalAnalyzer:
                     token.append(token_type)
                     lexeme.append(token_lexeme)
                     row.append(self.lin_num)
+                    tokenerror.append(token_type)
+                    lexemeerror.append(token_lexeme)
                     # To print information about a Token
                     if token_type == 'ID':
                         if token_lexeme == 'html' or token_lexeme == 'head' or token_lexeme == 'title' or token_lexeme == 'body' or token_lexeme == 'h1' or token_lexeme == 'h2' or token_lexeme == 'h3' or token_lexeme == 'h4' or token_lexeme == 'h5' or token_lexeme == 'h6' or token_lexeme == 'p' or token_lexeme == 'br' or token_lexeme == 'img' or token_lexeme == 'src' or token_lexeme == 'a' or token_lexeme == 'href' or token_lexeme == 'ol' or token_lexeme == 'ul' or token_lexeme == 'li' or token_lexeme == 'style' or token_lexeme == 'table' or token_lexeme == 'th' or token_lexeme == 'tr' or token_lexeme == 'border' or token_lexeme == 'caption' or token_lexeme == 'td' or token_lexeme == 'colgroup' or token_lexeme == 'col' or token_lexeme == 'thead' or token_lexeme == 'tbody' or token_lexeme == 'tfoot':
@@ -236,7 +253,7 @@ class LexicalAnalyzer:
                         print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
 
         
-        return token, lexeme, row, column  
+        return token, lexeme, row, column, tokenerror, lexemeerror
 
     def tokenizermt(self, code):
         rules = [
@@ -291,6 +308,7 @@ class LexicalAnalyzer:
                         token.append(token_type)
                         lexeme.append(token_lexeme)
                         print('Error Lexico, Lexeme = \'{0}\', Row = {1}, Column = {2}'.format(token_lexeme, self.lin_num, col))
+                        
                     else:
                         token.append(token_type)
                         lexeme.append(token_lexeme)

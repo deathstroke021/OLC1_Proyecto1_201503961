@@ -1,0 +1,17 @@
+La respuesta para [//pathl:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
+] es: 
+// es un comentario
+La respuesta para [//pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
+] es: 
+// es un comentario
+La respuesta para [
+] es: 
+
+ no se reconoce
+La respuesta para [fernando armira ramirez
+] es: 
+fernando es un id
+armira es un id
+ramirez es un id
+
+ no se reconoce

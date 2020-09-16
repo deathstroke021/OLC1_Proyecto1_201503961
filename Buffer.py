@@ -32,7 +32,7 @@ class Buffer:
 
         # The buffer size can be changed by changing cont
         while text != "":
-            buffer.append(text.lower())
+            buffer.append(text)
             text = arq.readline()
             cont += 1
 

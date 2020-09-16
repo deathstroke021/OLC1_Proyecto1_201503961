@@ -1,0 +1,14 @@
+digraph automata_finito {
+rankdir=LR;
+graph [label="AFD", labelloc=t, fontsize=20]; 
+node [shape=doublecircle, style = filled,color = mediumseagreen]; 0;
+edge [color=red];
+secret_node [style=invis];
+secret_node -> 0 [label="inicio"];
+node [shape=doublecircle, style = filled,color = mediumseagreen]; 2;
+node [shape=circle];
+node [color=midnightblue,fontcolor=white]; 3;
+0 -> 2 [label="letra"];
+2 -> 3 [label="letra|numero|_"];
+3 -> 3 [label="letra|numero|_"];
+}

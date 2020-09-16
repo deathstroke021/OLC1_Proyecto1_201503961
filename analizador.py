@@ -2,6 +2,7 @@ from tkinter import Tk, Menu, messagebox, filedialog, ttk, Label, scrolledtext, 
 from Buffer import Buffer
 from LexicalAnalyzer import LexicalAnalyzer
 from pila import Pila
+from afd import afd
 import os
 
 root = Tk()
@@ -14,6 +15,7 @@ archivo = ""
 
 Buffer = Buffer()
 Analyzer = LexicalAnalyzer()
+Afd=afd()
 
 def nuevo():
     global archivo
@@ -91,19 +93,60 @@ def ejecutar():
             lexeme = []
             row = []
             column = []
+            error = []
+            rowerror = []
+            colerror = []
  
             # Tokenize and reload of the buffer
             #entrada = 'program.c'
             for i in Buffer.load_buffer(archivo):
-                t, lex, lin, col = Analyzer.tokenizejs(i)
+                t, lex, lin, col, e, re, ce = Analyzer.tokenizejs(i)
                 token += t
                 lexeme += lex
                 row += lin
                 column += col
+                error += e
+                rowerror += re
+                colerror += ce
 
         
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
+
+            automata = Afd.abrir_archivo(archivo)
+            Afd.escribir_archivo(automata)
+
+            f= open("Erroresjs.html","w+")
+
+            f.write("<html>\n")
+            f.write("<head>\n")
+            f.write("<title>Reporte errores js</title>\n")
+            f.write("</head>\n")
+            f.write("<body>\n")
+            f.write("<h1 >Reporte Errores JavaScript</h1>\n")
+            f.write("<table border=\"1\">\n")
+            f.write("<tr>\n")
+            f.write("<td> No. </td>\n")
+            f.write("<td> Fila </td>\n")
+            f.write("<td> Columna </td>\n")
+            f.write("<td> Error </td>\n")
+            f.write("</tr>\n")
+
+            contadorerror = 1
+            for i in range(len(error)):
+                f.write("<tr>\n")
+                f.write("<td>"+ str(contadorerror) + "</td>\n")
+                f.write("<td>"+ str(rowerror[i]) + "</td>\n")
+                f.write("<td>"+ str(colerror[i]) + "</td>\n")
+                f.write("<td>"+ error[i] + "</td>\n")
+                f.write("</tr>\n")
+                contadorerror = contadorerror + 1
+
+            f.write("</table>\n")
+            f.write("</body>\n")
+            f.write("</html>\n")
+            f.close() 
+            print('Reporte creado')
 
             contador = 0
             for i in range(len(token)):
@@ -139,19 +182,57 @@ def ejecutar():
             lexeme = []
             row = []
             column = []
+            error = []
+            rowerror = []
+            colerror = []
  
             # Tokenize and reload of the buffer
             #entrada = 'program.c'
             for i in Buffer.load_buffer(archivo):
-                t, lex, lin, col = Analyzer.tokenizecss(i)
+                t, lex, lin, col, e, re, ce = Analyzer.tokenizecss(i)
                 token += t
                 lexeme += lex
                 row += lin
                 column += col
+                error += e
+                rowerror += re
+                colerror += ce
 
         
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
+
+            f= open("Errorescss.html","w+")
+
+            f.write("<html>\n")
+            f.write("<head>\n")
+            f.write("<title>Reporte errores css</title>\n")
+            f.write("</head>\n")
+            f.write("<body>\n")
+            f.write("<h1 >Reporte Errores CSS</h1>\n")
+            f.write("<table border=\"1\">\n")
+            f.write("<tr>\n")
+            f.write("<td> No. </td>\n")
+            f.write("<td> Fila </td>\n")
+            f.write("<td> Columna </td>\n")
+            f.write("<td> Error </td>\n")
+            f.write("</tr>\n")
+
+            contadorerror = 1
+            for i in range(len(error)):
+                f.write("<tr>\n")
+                f.write("<td>"+ str(contadorerror) + "</td>\n")
+                f.write("<td>"+ str(rowerror[i]) + "</td>\n")
+                f.write("<td>"+ str(colerror[i]) + "</td>\n")
+                f.write("<td>"+ error[i] + "</td>\n")
+                f.write("</tr>\n")
+                contadorerror = contadorerror + 1
+
+            f.write("</table>\n")
+            f.write("</body>\n")
+            f.write("</html>\n")
+            f.close() 
+            print('Reporte creado')
 
             contador = 0
             for i in range(len(token)):
@@ -210,15 +291,20 @@ def ejecutar():
             lexeme = []
             row = []
             column = []
+            tokenerror = []
+            lexemeerror = []
  
             # Tokenize and reload of the buffer
             #entrada = 'program.c'
             for i in Buffer.load_buffer(archivo):
-                t, lex, lin, col = Analyzer.tokenizehtml(i)
+                t, lex, lin, col, te, le = Analyzer.tokenizehtml(i)
                 token += t
                 lexeme += lex
                 row += lin
                 column += col
+                tokenerror += te
+                lexemeerror += le
+
 
         
             print('\nRecognize Tokens: ', token)
@@ -274,6 +360,58 @@ def ejecutar():
                 
             f.close() 
             print('Archivo creado')
+
+            f= open("Erroreshtml.html","w+")
+
+            f.write("<html>\n")
+            f.write("<head>\n")
+            f.write("<title>Reporte errores html</title>\n")
+            f.write("</head>\n")
+            f.write("<body>\n")
+            f.write("<h1 >Reporte Errores HTML</h1>\n")
+            f.write("<table border=\"1\">\n")
+            f.write("<tr>\n")
+            f.write("<td> No. </td>\n")
+            f.write("<td> Fila </td>\n")
+            f.write("<td> Columna </td>\n")
+            f.write("<td> Error </td>\n")
+            f.write("</tr>\n")
+
+            contadorerror = 1
+            i = 0
+            while i < len(tokenerror):
+                #f.write(token[i] + " " + lexeme[i] + "\n")
+                if tokenerror[i] == "MENOR_QUE":
+                    #print(i)
+                    j = i+1
+                    while j < len(tokenerror):
+                        if tokenerror[j] == "MAYOR_QUE":
+                            #print(j)
+                            i = j
+                            j = len(tokenerror)
+                            #print(j)
+                        elif tokenerror[j] == "OTROS_SIMBOLOS":
+
+                            f.write("<tr>\n")
+                            f.write("<td>"+ str(contadorerror) + "</td>\n")
+                            f.write("<td>"+ str(row[j]) + "</td>\n")
+                            f.write("<td>"+ str(column[j]) + "</td>\n")
+                            f.write("<td>"+ lexemeerror[j] + "</td>\n")
+                            f.write("</tr>\n")
+                            contadorerror = contadorerror + 1
+                            
+                            #print(j)
+                        
+                        j=j+1
+
+                
+                i = i+1
+
+            f.write("</table>\n")
+            f.write("</body>\n")
+            f.write("</html>\n")
+            f.close() 
+            print('Reporte creado')
         
         elif tipoarchivo[1] == "rmt":
             print("Analizando archivo Rmt")
@@ -314,16 +452,20 @@ def ejecutar():
             i = 0
             expresion = ""
             estado = ""
+            estadolexico = ""
             while i < len(token):
                 #f.write(token[i] + " " + lexeme[i] + "\n")
                 if token[i] == "NEWLINE":
                     print("Nueva expresion")
                     #f.write(lexeme[i])
-                    if p.estaVacia() is True and estado == "":
+                    if p.estaVacia() is True and estado == "" and estadolexico == "":
                         #print("pila vacia, correcto")
                         estado = "Correcto"
+                    elif p.estaVacia() is True and estado == "" and estadolexico == "Error":
+                        #print("pila vacia, correcto")
+                        estado = "Incorrecto"
                     elif p.estaVacia() is False:
-                        estado = "Error"
+                        estado = "Incorrecto"
 
 
                     f.write("<tr>\n")
@@ -332,12 +474,17 @@ def ejecutar():
                     f.write("</tr>\n")
                     expresion = ""
                     estado = ""
+                    estadolexico=""
 
                     while p.estaVacia() is False:
                         p.extraer()
 
                 elif token[i] == "SKIP":
                     print("Ignorar")
+
+                elif token[i] == "MISMATCH":
+                    estadolexico = "Error"
+                    expresion = expresion + " " + lexeme[i]
 
                 else:
                     #f.write(lexeme[i])
@@ -351,7 +498,7 @@ def ejecutar():
                         #print("Removiendo en pila")
                         if p.estaVacia() is True:
                             #print("pila vacia, error")
-                            estado = "Error"
+                            estado = "Incorrecto"
                         else:
                             #print("pila llena, se ha removido")
                             p.extraer()
@@ -359,11 +506,14 @@ def ejecutar():
 
                 i = i+1
 
-            if p.estaVacia is True and estado == "":
-                #print("pila vaica, correcto")
+            if p.estaVacia() is True and estado == "" and estadolexico == "":
+                #print("pila vacia, correcto")
                 estado = "Correcto"
+            elif p.estaVacia() is True and estado == "" and estadolexico == "Error":
+                #print("pila vacia, correcto")
+                estado = "Incorrecto"
             elif p.estaVacia() is False:
-                estado = "Error"
+                estado = "Incorrecto"
 
             while p.estaVacia() is False:
                 p.extraer()
@@ -374,6 +524,7 @@ def ejecutar():
             f.write("</tr>\n")
             expresion = ""
             estado = ""
+            estadolexico=""
 
             f.write("</table>\n")
             f.write("</body>\n")
@@ -398,10 +549,16 @@ archivoMenu.add_command(label = "Guardar Como...", command = guardarComo)
 archivoMenu.add_separator()
 archivoMenu.add_command(label = "Salir", command = salir)
 
+reporteMenu = Menu(barraMenu, tearoff=0)
+reporteMenu.add_command(label = "Errores JS")
+reporteMenu.add_command(label = "Errores CSS")
+reporteMenu.add_command(label = "Errores HTML")
+reporteMenu.add_command(label = "Sintactico")
+
 
 barraMenu.add_cascade(label = "Archivo", menu = archivoMenu)
 barraMenu.add_command(label = "Analizar",  command = ejecutar)
-barraMenu.add_command(label = "Reportes",  command = salir)
+barraMenu.add_cascade(label = "Reportes",  menu = reporteMenu)
 barraMenu.add_command(label = "Salir",  command = salir)
 
 frame = Frame(root, bg="gray")
