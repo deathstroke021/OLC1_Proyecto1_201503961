@@ -4,6 +4,7 @@ from LexicalAnalyzer import LexicalAnalyzer
 from pila import Pila
 from afd import afd
 import os
+import subprocess
 
 root = Tk()
 root.title("Analizador")
@@ -40,7 +41,7 @@ def abrir():
     entrada.close()
 
     consola.insert(INSERT, "Abriendo archivo " + archivo + "\n")
-    consola.insert(INSERT, "Prueba", "start")
+    consola.insert(INSERT, "Prueba \n", "start")
 
 def salir():
     value = messagebox.askokcancel("Salir", "Está seguro que desea salir?")
@@ -63,6 +64,24 @@ def guardarComo():
     fguardar.write(editor.get(1.0, END))
     fguardar.close()
     archivo = guardar
+
+def afdjs():
+    os.system('dot AFD.dot -Tpng -o AFD.png')
+    print("Generando reporte...")
+    subprocess.Popen("AFD.png",shell=True)
+
+
+def erroresjs():
+    subprocess.Popen("Erroresjs.html",shell=True)
+
+def errorescss():
+    subprocess.Popen("Errorescss.html",shell=True)
+
+def erroreshtml():
+    subprocess.Popen("Erroreshtml.html",shell=True)
+
+def reportesin():
+    subprocess.Popen("Reportesintactico.html",shell=True)
 
 def ejecutar():
     global archivo
@@ -185,6 +204,8 @@ def ejecutar():
             error = []
             rowerror = []
             colerror = []
+            #bitacoratoken = []
+            #bitacoralexeme = []
  
             # Tokenize and reload of the buffer
             #entrada = 'program.c'
@@ -197,10 +218,17 @@ def ejecutar():
                 error += e
                 rowerror += re
                 colerror += ce
+                #bitacoratoken += bitt
+                #bitacoralexeme += bitl
 
         
             print('\nRecognize Tokens: ', token)
             Analyzer.lin_num = 1
+
+            #for i in range(len(bitacoratoken)):
+                #if bitacoratoken[i] == "ID":
+            consola.insert(INSERT, "############## BITACORA CSS##############" + "\n")
+            bitacora(archivo)
 
             f= open("Errorescss.html","w+")
 
@@ -538,6 +566,178 @@ def ejecutar():
         else:
             print("No se ha podido ejecutar el analisis, Archivo no soportado")
 
+def bitacora(entrada):
+    expresiones = open(entrada)
+    linea = [" "]
+    #impresion = ''
+    while linea != '':
+        #Leer linea a linea del .txt
+        linea = expresiones.readline().split(' ')
+        #print(linea)
+        if linea == ['']:
+            expresiones.close()
+            break
+        #Resultado para el archivo
+        #' '.join() une los elementos 
+        #linea[:-1] todos menos el ultimo elemento
+            
+        #impresion += "La respuesta para ["+' '.join(linea)+"] es: "'\n'
+        #impresion += self.describir_lexico(' '.join(linea))
+        describir_bitacora(' '.join(linea))
+
+def describir_bitacora(elementos):
+    #Tomar elemento por elemento
+        elemento = elementos
+        #print(elemento)
+        #print(len(elementos))
+        #print(elemento[len(elemento) - 1])
+        #caracteres = elementos.split(' ')
+        i = 0
+        #impresion = ""
+        
+        while i < len(elemento):
+            #print(elemento[i])
+            #Si es un numero
+            if elemento[i].isdigit():
+                consola.insert(INSERT, "Caracter: " + elemento[i] + " Transicion a estado: 1 " + "\n")
+                start = elemento[i]
+                end=""
+                j=i+1
+                while j < len(elemento):
+                    if elemento[j].isdigit():
+                        consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 1 " + "\n")
+                        end = end + elemento[j]
+                    elif elemento[j] == ".":
+                        consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 6 " + "\n")
+                        punto = elemento[j]
+                        k=j+1
+                        if elemento[k].isdigit():
+                            consola.insert(INSERT, "Caracter: " + elemento[k] + " Transicion a estado: 7 " + "\n")
+                            end = end + punto + elemento[k]
+                            k = k+1
+                            while k < len(elemento):
+                                if elemento[k].isdigit():
+                                    consola.insert(INSERT, "Caracter: " + elemento[k] + " Transicion a estado: 7 " + "\n")
+                                    end = end + elemento[k]
+
+                                else:
+                                    consola.insert(INSERT, "Estado 7 - Token NUMERO DECIMAL aceptado - Lexema: " +  start + end + "\n")
+                                    #impresion += start + end +" es un numero"'\n'
+                                    #print("numero")
+                                    i=k-1
+                                    j=len(elemento)
+                                    k=len(elemento)
+                        
+                                k=k+1
+                        else:
+                            consola.insert(INSERT, "Estado 1 - Token NUMERO aceptado - Lexema: " +  start + end + "\n")
+                            consola.insert(INSERT, "Caracter: " + punto  + " Transicion a estado: 0 " + "\n")
+                            i = k -2
+                            j=len(elemento)
+                       
+                    else:
+                        consola.insert(INSERT, "Estado 1 - Token NUMERO aceptado - Lexema: " +  start + end + "\n")
+                        #impresion += start + end +" es un numero"'\n'
+                        #print("numero")
+                        i = j-1
+                        j=len(elemento)
+                        
+                    j=j+1
+                        
+            
+            #Si es una variable (minusculas)
+            elif elemento[i].isalpha():
+                consola.insert(INSERT, "Caracter: " + elemento[i] + " Transicion a estado: 2 " + "\n")
+                start = elemento[i]
+                end = ""
+                j=i+1
+                while j < len(elemento):
+                    if elemento[j].isalpha() or elemento[j].isdigit() or elemento[j] == "-":
+                        consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 3 " + "\n")
+                        end = end + elemento[j]
+                    else:
+                        #impresion += start + end +" es un id"'\n'
+                        #print("id")
+                        consola.insert(INSERT, "Estado 3 - Token ID aceptado - Lexema: " +  start + end + "\n")
+                        i = j-1
+                        j=len(elemento)
+                        
+                    j=j+1
+            elif elemento[i] == "\"":
+                consola.insert(INSERT, "Caracter: " + elemento[i] + " Transicion a estado: 4 " + "\n")
+                start = elemento[i]
+                end = ""
+                j=i+1
+                while j < len(elemento):
+                    if elemento[j] == "\"":
+                        #impresion += start + end + elemento[j] + " es una cadena"'\n'
+                        consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 5 " + "\n")
+                        consola.insert(INSERT, "Estado 5 - Token CADENA aceptado - Lexema: " +  start + end + elemento[j] + "\n")
+                        i = j
+                        j=len(elemento)
+                        
+                    else:
+                        consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 4 " + "\n")
+                        end = end + elemento[j]
+                        
+                        #print("id")
+                        
+                        
+                    j=j+1
+
+            
+            elif elemento[i] == "/":
+                consola.insert(INSERT, "Caracter: " + elemento[i] + " Transicion a estado: 8 " + "\n")
+                start = elemento[i]
+                end = ""
+                j=i+1
+                if elemento[j] == "*":
+                    consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 9 " + "\n")
+                    end = end + elemento[j]
+                    j=j+1
+                    while j < len(elemento):
+                        if elemento[j] == "*":
+                            #impresion += start + elemento[j] + " es un comentario"'\n'
+                            consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 10 " + "\n")
+                            end = end + elemento[j]
+                            k=j+1
+                            if elemento[k] == "/":
+                                consola.insert(INSERT, "Caracter: " + elemento[k] + " Transicion a estado: 11" + "\n")
+                                consola.insert(INSERT,"Estado 12 - Token COMENTARIO aceptado - Lexema: " +  start + end + elemento[k] + "\n")
+                                i=k
+                                j=len(elemento)
+                        
+                        else:
+                            #impresion += start + "diagonal"'\n'
+                            consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 9 " + "\n")
+                            end = end + elemento[j]
+                            i=j
+                        
+                        j=j+1
+                else:
+                    consola.insert(INSERT, "Estado 8 - Token SIMBOLO aceptado - Lexema: " +  elemento[i] + "\n")
+
+            #Si es un operador (+-*/)
+            elif elemento[i] == "-" or elemento[i] == "{" or elemento[i] == "}" or elemento[i] == ":" or elemento[i] == ";" or elemento[i] == "*" or elemento[i] == "#" or elemento[i] == "," or elemento[i] == "." or elemento[i] == "%" or elemento[i] == "(" or elemento[i] == ")":
+                #impresion += elemento[i]+" es un operador"'\n'
+                consola.insert(INSERT, "Estado 0 - Token SIMBOLO aceptado - Lexema: " +  elemento[i] + "\n")
+                #print("operador")
+
+            elif elemento[i] == " ":
+                print("ignorar")
+            elif elemento[i] == "\n":
+                print("ignorar")
+            elif elemento[i] == "\t":
+                print("ignorar")
+                
+            else:
+                #print(i)
+                consola.insert(INSERT, "Error lexico - Caracter: " +  elemento[i] + "\n")
+                #print("error")
+            #print(i)
+            i += 1
+            #print(i) 
+
 barraMenu = Menu(root)
 root.config(menu = barraMenu, width = 1000, height = 600)
 
@@ -550,10 +750,11 @@ archivoMenu.add_separator()
 archivoMenu.add_command(label = "Salir", command = salir)
 
 reporteMenu = Menu(barraMenu, tearoff=0)
-reporteMenu.add_command(label = "Errores JS")
-reporteMenu.add_command(label = "Errores CSS")
-reporteMenu.add_command(label = "Errores HTML")
-reporteMenu.add_command(label = "Sintactico")
+reporteMenu.add_command(label = "AFD JS", command = afdjs)
+reporteMenu.add_command(label = "Errores JS", command = erroresjs)
+reporteMenu.add_command(label = "Errores CSS", command = errorescss)
+reporteMenu.add_command(label = "Errores HTML", command = erroreshtml)
+reporteMenu.add_command(label = "Sintactico", command = reportesin)
 
 
 barraMenu.add_cascade(label = "Archivo", menu = archivoMenu)

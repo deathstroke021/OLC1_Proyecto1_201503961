@@ -1,14 +1,22 @@
 # -*- coding: utf-8 -*-
+import os
+import subprocess
 
 class afd:
 
     contadornumero = 0
     contadorid = 0
     contadorcadena = 0
+    contadornumerod = 0
 
     """ AGREGAR ELEMENTOS A LA COLA """
     def abrir_archivo(self, entrada):
         #Abrir .txt con expresiones aritmeticas
+        self.contadornumero = 0
+        self.contadorid = 0
+        self.contadorcadena = 0
+        self.contadornumerod = 0
+        
         expresiones = open(entrada)
         linea = [" "]
         impresion = ''
@@ -58,6 +66,51 @@ class afd:
                 while j < len(elemento):
                     if elemento[j].isdigit():
                         end = end + elemento[j]
+
+                    elif elemento[j] == ".":
+                        #consola.insert(INSERT, "Caracter: " + elemento[j] + " Transicion a estado: 6 " + "\n")
+                        punto = elemento[j]
+                        k=j+1
+                        if elemento[k].isdigit():
+                            #consola.insert(INSERT, "Caracter: " + elemento[k] + " Transicion a estado: 7 " + "\n")
+                            end = end + punto + elemento[k]
+                            k = k+1
+                            while k < len(elemento):
+                                if elemento[k].isdigit():
+                                    #consola.insert(INSERT, "Caracter: " + elemento[k] + " Transicion a estado: 7 " + "\n")
+                                    end = end + elemento[k]
+
+                                else:
+                                    #consola.insert(INSERT, "Estado 7 - Token NUMERO DECIMAL aceptado - Lexema: " +  start + end + "\n")
+                                    #impresion += start + end +" es un numero"'\n'
+                                    #print("numero")
+                                    if self.contadornumerod == 0:
+                                        print("Graficar AFD numero decimal")
+                            
+                            
+                                        self.contadornumerod = 1
+                                    else:
+                                        print("AFD numero decimal ya graficado")
+                                    i=k-1
+                                    j=len(elemento)
+                                    k=len(elemento)
+                        
+                                k=k+1
+                        else:
+                            #consola.insert(INSERT, "Estado 1 - Token NUMERO aceptado - Lexema: " +  start + end + "\n")
+                            #consola.insert(INSERT, "Caracter: " + punto  + " Transicion a estado: 0 " + "\n")
+                            if self.contadornumero == 0:
+                                print("Graficar AFD numero")
+                            
+                            
+                                self.contadornumero = 1
+                            else:
+                                print("AFD numero ya graficado")
+                            
+                            
+                            i = k -2
+                            j=len(elemento)
+
                     else:
                         impresion += start + end +" es un numero"'\n'
 
@@ -73,11 +126,7 @@ class afd:
                         j=len(elemento)
                         
                     j=j+1
-                        
-            #Si es un operador (+-*/)
-            elif elemento[i] == "*" or elemento[i] == "+" or elemento[i] == "-":
-                impresion += elemento[i]+" es un operador"'\n'
-                #print("operador")
+                                
             #Si es una variable (minusculas)
             elif elemento[i].isalpha():
                 start = elemento[i]
@@ -158,7 +207,16 @@ class afd:
                         
                     j=j+1
 
+            #Si es un operador (+-*/)
+            elif elemento[i] == "*" or elemento[i] == "+" or elemento[i] == "-":
+                impresion += elemento[i]+" es un operador"'\n'
+                #print("operador")
+
             elif elemento[i] == " ":
+                print("ignorar")
+            elif elemento[i] == "\n":
+                print("ignorar")
+            elif elemento[i] == "\t":
                 print("ignorar")
             else:
                 #print(i)
@@ -178,7 +236,7 @@ class afd:
         f.write("edge [color=red];\n")
         f.write("secret_node [style=invis];\n")
         f.write("secret_node -> 0 [label=\"inicio\"];\n")
-        if self.contadornumero == 1:
+        if self.contadornumero == 1 and self.contadornumerod == 0:
             f.write("node [shape=circle];\n")
             f.write("node [color=midnightblue,fontcolor=white]; 1;\n")
             f.write("0 -> 1 [label=\"numero\"];\n")
@@ -191,15 +249,28 @@ class afd:
             f.write("2 -> 3 [label=\"letra|numero|_\"];\n")
             f.write("3 -> 3 [label=\"letra|numero|_\"];\n")
         if self.contadorcadena == 1:
-            f.write("node [shape=doublecircle, style = filled,color = mediumseagreen]; 4,5;\n")
+            f.write("node [shape=doublecircle, style = filled,color = mediumseagreen]; 4;\n")
             f.write("node [shape=circle];\n")
-            f.write("node [color=midnightblue,fontcolor=white]; 6;\n")
+            f.write("node [color=midnightblue,fontcolor=white]; 5;\n")
             f.write("0 -> 4 [label=\"\\\"\"];\n")
-            f.write("4 -> 5 [label=\"todo\"];\n")
-            f.write("5 -> 6 [label=\"\\\"\"];\n")
+            f.write("4 -> 4 [label=\"todo\"];\n")
+            f.write("4 -> 5 [label=\"\\\"\"];\n")
+        if self.contadornumerod == 1:
+            f.write("node [shape=doublecircle, style = filled,color = mediumseagreen]; 1;\n")
+            f.write("node [shape=doublecircle, style = filled,color = mediumseagreen]; 6;\n")
+            f.write("node [shape=circle];\n")
+            f.write("node [color=midnightblue,fontcolor=white]; 7;\n")
+            f.write("0 -> 1 [label=\"numero\"];\n")
+            f.write("1 -> 1 [label=\"numero\"];\n")
+            f.write("1 -> 6 [label=\".\"];\n")
+            f.write("6 -> 7 [label=\"numero\"];\n")
+            f.write("7 -> 7 [label=\"numero\"];\n")
 
         f.write("}")
         f.close
+
+        #os.system('dot AFD.dot -Tpng -o AFD.png')
+        print("Se creo el archivo dot correctamente")
         
     
     

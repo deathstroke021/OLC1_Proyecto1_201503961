@@ -6,12 +6,30 @@ La respuesta para [//pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1
 // es un comentario
 La respuesta para [
 ] es: 
-
- no se reconoce
 La respuesta para [fernando armira ramirez
 ] es: 
 fernando es un id
 armira es un id
 ramirez es un id
-
- no se reconoce
+La respuesta para [
+] es: 
+La respuesta para [24  28.6
+] es: 
+24 es un numero
+La respuesta para [
+] es: 
+La respuesta para ["fer"
+] es: 
+"fer" es una cadena
+La respuesta para [
+] es: 
+La respuesta para [%%%%%%
+] es: 
+% no se reconoce
+% no se reconoce
+% no se reconoce
+% no se reconoce
+% no se reconoce
+% no se reconoce
+La respuesta para [
+] es: 

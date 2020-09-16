@@ -2,3 +2,10 @@
 //pathw:c:\users\fernando armira\downloads\git\olc1_proyecto1_201503961\reubicado\
 
 fernando armira ramirez
+
+24  28.6
+
+"fer"
+
+
+

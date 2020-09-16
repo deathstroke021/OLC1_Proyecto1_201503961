@@ -141,6 +141,8 @@ class LexicalAnalyzer:
         error = []
         rowerror = []
         colerror = []
+        #bitacoratoken = []
+        #bitacoralexeme = []
 
         # It analyzes the code to find the lexemes and their respective Tokens
         for m in re.finditer(tokens_join, code):
@@ -169,11 +171,15 @@ class LexicalAnalyzer:
                     error.append(token_lexeme)
                     rowerror.append(self.lin_num)
                     colerror.append(col)
+                    #bitacoratoken.append(token_type)
+                    #bitacoralexeme.append(token_lexeme)
                 
                 else:
                     token.append(token_type)
                     lexeme.append(token_lexeme)
                     row.append(self.lin_num)
+                    #bitacoratoken.append(token_type)
+                    #bitacoralexeme.append(token_lexeme)
                     # To print information about a Token
                     if token_type == 'ID':
                         if token_lexeme.lower() == 'color' or token_lexeme.lower() == 'border-style' or token_lexeme.lower() == 'border' or token_lexeme.lower() == 'text-allign' or token_lexeme.lower() == 'font-weight' or token_lexeme.lower() == 'padding-left' or token_lexeme.lower() == 'padding-top' or token_lexeme.lower() == 'line-height' or token_lexeme.lower() == 'margin-top' or token_lexeme.lower() == 'margin-left' or token_lexeme.lower() == 'display' or token_lexeme.lower() == 'top' or token_lexeme.lower() == 'float' or token_lexeme.lower() == 'min-width' or token_lexeme.lower() == 'background-color' or token_lexeme.lower() == 'opacity' or token_lexeme.lower() == 'font-family' or token_lexeme.lower() == 'font-size' or token_lexeme.lower() == 'padding-right' or token_lexeme.lower() == 'width' or token_lexeme.lower() == 'margin-right' or token_lexeme.lower() == 'position' or token_lexeme.lower() == 'right' or token_lexeme.lower() == 'clear' or token_lexeme.lower() == 'max-height' or token_lexeme.lower() == 'background-image' or token_lexeme.lower() == 'background' or token_lexeme.lower() == 'font-style' or token_lexeme.lower() == 'font' or token_lexeme.lower() == 'padding-bottom' or token_lexeme.lower() == 'padding' or token_lexeme.lower() == 'display' or token_lexeme.lower() == 'height' or token_lexeme.lower() == 'margin-bottom' or token_lexeme.lower() == 'margin' or token_lexeme.lower() == 'bottom' or token_lexeme.lower() == 'left' or token_lexeme.lower() == 'max-width' or token_lexeme.lower() == 'min-height' or token_lexeme.lower() == 'rgba' or token_lexeme.lower() == 'url' or token_lexeme.lower() == 'px' or token_lexeme.lower() == 'em' or token_lexeme.lower() == 'vh' or token_lexeme.lower() == 'vw' or token_lexeme.lower() == 'in' or token_lexeme.lower() == 'cm' or token_lexeme.lower() == 'mm' or token_lexeme.lower() == 'pt' or token_lexeme.lower() == 'pc' or token_lexeme.lower() == 'rem':
@@ -186,7 +192,7 @@ class LexicalAnalyzer:
                         print('Token = {0}, Lexeme = \'{1}\', Row = {2}, Column = {3}'.format(token_type, token_lexeme, self.lin_num, col))
  
         
-        return token, lexeme, row, column, error, rowerror, colerror
+        return token, lexeme, row, column, error, rowerror, colerror#, bitacoratoken, bitacoralexeme
 
     def tokenizehtml(self, code):
         rules = [    
