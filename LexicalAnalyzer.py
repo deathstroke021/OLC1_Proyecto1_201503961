@@ -9,7 +9,7 @@ class LexicalAnalyzer:
         rules = [
             #('PRUEBA', r'[^5]'),
             ('COMENTARIO', r'\/\/(.)*'),
-            ('COMENTARIO_MULTILINEA', r'\/(\*)+(.)*((.)*\n)*(\*)+\/'),
+            ('COMENTARIO_MULTILINEA', r'\/\*((.)*(\n[^\*\/]*)+)\*\/'),
             #('COMENTARIO_MULTILINEA_UNILINEA', r'\/\*(.)*\*\/'),
             #('COMENTARIO_MULTILINEA', r'\/\*((.)*\n)*\*\/'),             
             ('ID', r'[a-zA-Z]\w*'),             
@@ -103,9 +103,9 @@ class LexicalAnalyzer:
     def tokenizecss(self, code):
         rules = [
             ('COMENTARIO', r'\/\*(.)*\*\/'),
-            ('COMENTARIO_MULTILINEA', r'\/\*((.)*\n+|([ \t]*\n)+)'),  
-            #('COMENTARIO_MULTILINEA', r'\/(\*)+(.)*((.)*\n)*(\*)+\/'),
-            #('COMENTARIO_MULTILINEA', r'\/\*((.)*\n(.)*)+\*\/'), 
+            ('COMENTARIO_MULTILINEA', r'\/\*((.)*(\n[^\*\/]*)+)\*\/'),  
+            #('COMENTARIO_MULTILINEA', r'\/\*((.)*(\n(.)*)+|([ \t]*\n)+)'),
+            #('COMENTARIO_MULTILINEA', r'\/\*((.)*(\n(.)*)+)\*\/'),
             ('ID', r'[a-zA-Z]([a-zA-Z]|\d|-)*'),             
             ('FLOAT_CONST', r'\d(\d)*\.\d(\d)*'),
             ('INTEGER_CONST', r'\d(\d)*'),
@@ -197,6 +197,7 @@ class LexicalAnalyzer:
     def tokenizehtml(self, code):
         rules = [    
             ('COMENTARIO', r'<!--(.)*-->'),
+            ('COMENTARIO_MULTILINEA', r'<!--((.)*(\n[^\*\/]*)+)-->'),
             ('ID', r'[a-zA-Z]\w*'),              
             ('FLOAT_CONST', r'\d(\d)*\.\d(\d)*'),
             ('INTEGER_CONST', r'\d(\d)*'),

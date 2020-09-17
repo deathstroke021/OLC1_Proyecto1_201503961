@@ -146,7 +146,7 @@ def abrir():
 
         for i in range(len(tokencolor)):
             #content = entrada.read()
-            if tokencolor[i] == "COMENTARIO":
+            if tokencolor[i] == "COMENTARIO" or tokencolor[i] == "COMENTARIO_MULTILINEA":
                 editor.insert(INSERT, lexemecolor[i], "comentario")
             elif tokencolor[i] == "ID":
                 if lexemecolor[i].lower() == 'html' or lexemecolor[i].lower() == 'head' or lexemecolor[i].lower() == 'title' or lexemecolor[i].lower() == 'body' or lexemecolor[i].lower() == 'h1' or lexemecolor[i].lower() == 'h2' or lexemecolor[i].lower() == 'h3' or lexemecolor[i].lower() == 'h4' or lexemecolor[i].lower() == 'h5' or lexemecolor[i].lower() == 'h6' or lexemecolor[i].lower() == 'p' or lexemecolor[i].lower() == 'br' or lexemecolor[i].lower() == 'img' or lexemecolor[i].lower() == 'src' or lexemecolor[i].lower() == 'a' or lexemecolor[i].lower() == 'href' or lexemecolor[i].lower() == 'ol' or lexemecolor[i].lower() == 'ul' or lexemecolor[i].lower() == 'li' or lexemecolor[i].lower() == 'style' or lexemecolor[i].lower() == 'table' or lexemecolor[i].lower() == 'th' or lexemecolor[i].lower() == 'tr' or lexemecolor[i].lower() == 'border' or lexemecolor[i].lower() == 'caption' or lexemecolor[i].lower() == 'td' or lexemecolor[i].lower() == 'colgroup' or lexemecolor[i].lower() == 'col' or lexemecolor[i].lower()== 'thead' or lexemecolor[i].lower() == 'tbody' or lexemecolor[i].lower() == 'tfoot':
